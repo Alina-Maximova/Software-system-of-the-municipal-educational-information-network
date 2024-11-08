@@ -1,0 +1,257 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\5\\lb4\\courseguide\\courseguide\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\5\\lb4\\courseguide\\courseguide\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\5\\lb4\\courseguide\\courseguide\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\5\\lb4\\courseguide\\courseguide\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\5\\lb4\\courseguide\\courseguide\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\5\\lb4\\courseguide\\courseguide\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\5\\lb4\\courseguide\\courseguide\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\5\\lb4\\courseguide\\courseguide\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseGuideDb/True/SqlTable/dbo.AspNetRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseGuideDb/True/SqlTable/dbo.AspNetUserRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseGuideDb/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\5\\lb4\\courseguide\\courseguide\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\5\\lb4\\courseguide\\courseguide\\helpers\\httpclientextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\helpers\\httpclientextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 10,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "CourseGuide\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "CourseGuide\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAowCMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-08T12:32:18.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "CourseGuide\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "CourseGuide\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T11:48:46.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CourseGuide\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CourseGuide\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T11:43:02.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CourseGuide\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CourseGuide\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADcAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T11:39:58.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CourseGuide\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CourseGuide\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T11:36:09.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "CourseGuide\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "CourseGuide\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T11:31:42.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "dbo.AspNetRoles [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseGuideDb/True/SqlTable/dbo.AspNetRoles.sql",
+              "ToolTip": "dbo.AspNetRoles [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-08T11:06:41.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dbo.AspNetUserRoles [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseGuideDb/True/SqlTable/dbo.AspNetUserRoles.sql",
+              "ToolTip": "dbo.AspNetUserRoles [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-08T11:06:02.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "CourseGuide\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "CourseGuide\\Models\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwBMAAAC3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T11:03:27.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.AspNetUsers [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseGuideDb/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-08T10:59:23.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "CourseGuide\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "CourseGuide\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T10:57:59.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CourseGuide\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CourseGuide\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAYwGUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:57:45.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HttpClientExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Helpers\\HttpClientExtensions.cs",
+              "RelativeDocumentMoniker": "CourseGuide\\Helpers\\HttpClientExtensions.cs",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\Helpers\\HttpClientExtensions.cs",
+              "RelativeToolTip": "CourseGuide\\Helpers\\HttpClientExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:56:25.794Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 10,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 10,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
