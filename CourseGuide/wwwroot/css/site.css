@@ -116,3 +116,9 @@ nav {
 .alert {
     transition: opacity 0.5s ease; /* Adjust the transition duration as needed */
 }
+.validation-error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+   

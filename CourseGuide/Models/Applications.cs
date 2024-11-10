@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace CourseGuide.Models
 {
-    public class Application
+    public class Applications
     {
         public int Id { get; set; }
 
@@ -15,11 +15,11 @@ namespace CourseGuide.Models
         [Required(ErrorMessage = "Выберите услугу")]
         [DisplayName("Услуга")]
         public int ServiceId { get; set; }
-        public Service Service { get; set; }
+        public Service? Service { get; set; }
 
         [Required(ErrorMessage = "Укажите номер теелфона")]
         [DisplayName("Новер телефона")]
-        [RegularExpression(@"^(\+7|8)d{10}$", ErrorMessage = "Некорректный номер телефона. Используйте формат +7XXXXXXXXXX или 8XXXXXXXXXX.")]
+        [RegularExpression(@"^(?:\+7[0-9]{10}|8[0-9]{10})$", ErrorMessage = "Некорректный номер телефона. Используйте формат +7XXXXXXXXXX или 8XXXXXXXXXX.")]
         public string Phone { get; set; }
 
         [Required(ErrorMessage = "Укажите свое имя")]
@@ -32,7 +32,7 @@ namespace CourseGuide.Models
         public string Status { get; set; }
 
         // Опционально: можно добавить список для заполнения выпадающего списка
-        public List<string> Statuses { get; } = new List<string> { "Новая", "В обработке", "Принята", "Отклонена" };
+        public List<string> Statuses { get; } = new List<string> { "Новая", "Принята", "Отменена" };
     }
 
 }

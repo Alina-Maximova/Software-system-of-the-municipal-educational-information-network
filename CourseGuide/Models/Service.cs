@@ -24,7 +24,7 @@ namespace CourseGuide.Models
         public int EducationalInstitutionId { get; set; }
         public EducationalInstitution? EducationalInstitution { get; set; }
         // Коллекция заявок
-        public ICollection<Application> Applications { get; set; } = new List<Application>();
+        public ICollection<Applications> Applications { get; set; } = new List<Applications>();
 
         // Коллекция отзывов
         public ICollection<Review> Reviews { get; set; } = new List<Review>();

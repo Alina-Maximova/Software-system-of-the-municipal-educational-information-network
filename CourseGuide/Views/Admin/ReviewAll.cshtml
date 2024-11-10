@@ -1,36 +1,35 @@
-﻿@model IEnumerable<CourseGuide.Models.Service>
+﻿@model IEnumerable<CourseGuide.Models.Review>
 <div asp-validation-summary="All" class="text-danger"></div>
 
 <table class="table">
     <thead>
         <tr>
+            <th>Услуга</th>
             <th>Название</th>
-            <th>Учебное заведение</th>
             <th>Описание</th>
+            <th>Статус</th>
             <th>Действия</th>
+
         </tr>
     </thead>
     <tbody>
-        @foreach (var Service in Model)
+        @foreach (var Review in Model)
         {
             <tr>
-                <td>@Service.ServiceName</td>
-                <td>@Service.EducationalInstitution.Name </td>
-                <td>
-                    Цена: @Service.Price руб.
-                    <br />
-                    @Service.Description
+                <td>@Review.Service.ServiceName @Review.Service.EducationalInstitution.Name </td>
+                <td>@Review.Title </td>
+                <td>@Review.Content</td>
+                <td>@Review.Status</td>
 
-                </td>
+                @if(Review.Status == "Новый")
+                {
+                    <td>
+                        <button class="btn btn-success mb-3 "><a asp-action="ReviewAccept" asp-route-id="@Review.Id" style="text-decoration: none; color: black">Принять</a></button>
+                        <button class="btn btn-danger mb-3 "><a asp-action="ReviewDelete" asp-route-id="@Review.Id" style="text-decoration: none; color: black">Удалить</a></button>
 
-                <td>
-                    <button class="btn btn-warning mb-3">
-                        <a style="text-decoration: none; color: black" onclick="update1(@Service.Id)">Изменить</a>
-                    </button>
-                    <button class="btn btn-danger mb-3 "><a asp-action="ServiceDelete" asp-route-id="@Service.Id" style="text-decoration: none; color: black">Удалить</a></button>
-                    <div id="upSer-@Service.Id">
-                    </div>
-                </td>
+                    </td>
+                }
+              
             </tr>
         }
     </tbody>
@@ -57,4 +56,5 @@
 
 
 </script>
+
 

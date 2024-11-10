@@ -8,7 +8,7 @@ namespace CourseGuide.Models
         // Добавляем DbSet для ваших моделей
         public DbSet<EducationalInstitution> EducationalInstitutions { get; set; }
         public DbSet<Service> Services { get; set; }
-        public DbSet<Application> Applications { get; set; }
+        public DbSet<Applications> Applications { get; set; }
         public DbSet<Review> Reviews { get; set; }
 
 

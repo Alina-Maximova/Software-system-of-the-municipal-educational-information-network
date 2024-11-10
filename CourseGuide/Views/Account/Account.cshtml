@@ -1,7 +1,19 @@
-﻿@{
+﻿@if (ViewData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @ViewData["SuccessMessage"]
+    </div>
+}
+@if (User.Identity.IsAuthenticated)
+{
+
+
+}
+
+@{
     ViewData["Title"] = "Панель администратора";
 }
-@if (User.IsInRole("Admin"))
+@if (User.Identity.IsAuthenticated)
 {
     <h2>@ViewData["Title"]</h2>
     @if (ViewData["SuccessMessage"] != null)
@@ -15,50 +27,31 @@
 
     <div class="tab-container">
         <div class="tabs">
-            <button class="tab-link " onclick="openTab(event, 'Tab1')">Пользователи</button>
-            <button class="tab-link" onclick="openTab(event, 'Tab2')">Услуги</button>
-            <button class="tab-link " onclick="openTab(event, 'Tab3')">Учебные заведения</button>
-            <button class="tab-link" onclick="openTab(event, 'Tab4')">Отзывы</button>
+            <button class="tab-link " onclick="openTab(event, 'Tab1')">Профиль</button>
+            <button class="tab-link" onclick="openTab(event, 'Tab2')">Другое</button>
+
         </div>
 
         <div id="Tab1" class="tab-content">
-
-            @await Html.PartialAsync("UserCreate", new CourseGuide.Models.UserReg())
-
-
-            <div id="userProfileContainer1">
+            <button id="deleteAccountBtn" class="btn btn-danger" onclick="confirmDelete()">Удалить аккаунт</button>
+            <div id="edit">
                 @* Здесь будет загружено частичное представление *@
             </div>
-
-
+            <div id="EditPassword">
+                @* Здесь будет загружено частичное представление *@
+            </div>
         </div>
 
         <div id="Tab2" class="tab-content">
-            <div id="serCreate">
-                @* Здесь будет загружено частичное представление *@
-            </div>
-            <div id="ser">
-                @* Здесь будет загружено частичное представление *@
-            </div>
 
+            <div id="app">
+                @* Здесь будет загружено частичное представление *@
+            </div>
 
         </div>
 
-        <div id="Tab3" class="tab-content">
-
-            @await Html.PartialAsync("EducationalInstitutionCreate", new CourseGuide.Models.EducationalInstitution())
-            <div id="Inst">
-                @* Здесь будет загружено частичное представление *@
-            </div>
-        </div>
-
-        <div id="Tab4" class="tab-content">
-            <div id="Rev">
-                @* Здесь будет загружено частичное представление *@
-            </div>
-        </div>
     </div>
-    
+
 }
 
 
@@ -66,22 +59,18 @@
 @section Scripts {
     <script>
         $(document).ready(function () {
-            $.get('@Url.Action("UserAll", "Admin")', function (data) {
-                $('#userProfileContainer1').html(data);
+
+            $.get('@Url.Action("ApplicationAll", "Account")', function (data) {
+                $('#app').html(data);
+            });
+            $.get('@Url.Action("EditProf", "Account")', function (data) {
+                $('#edit').html(data);
             });
 
-            $.get('@Url.Action("EducationalInstitutionAll", "Admin")', function (data) {
-                $('#Inst').html(data);
+            $.get('@Url.Action("EditPassword", "Account")', function (data) {
+                $('#EditPassword').html(data);
             });
-            $.get('@Url.Action("ServiceAll", "Admin")', function (data) {
-                $('#ser').html(data);
-            });
-            $.get('@Url.Action("ServiceCreate", "Admin")', function (data) {
-                $('#serCreate').html(data);
-            });
-            $.get('@Url.Action("ReviewAll", "Admin")', function (data) {
-                $('#Rev').html(data);
-            });
+
             var alertDiv = $('#successAlert');
             if (alertDiv.length > 0 && alertDiv.text().trim() !== '') {
                 alertDiv.show();
@@ -127,7 +116,27 @@
                 }
             }
         });
+        function confirmDelete() {
+            if (confirm("Вы действительно хотите удалить свой аккаунт? Это действие необратимо.")) {
+                $.ajax({
+                    url: '@Url.Action("DeleteAccount", "Account")',
+                    type: 'GET',
+                    success: function (data) {
+                        // Handle success response
+                        alert('Вы удалили свой аккаунт');
+                        location.reload();
+
+                        // Optionally, redirect or refresh the page
+                    },
+                    error: function (xhr, status, error) {
+                        // Handle error response
+                        alert('Error deleting account: ' + xhr.responseJSON.errors);
+                    }
+                })
+            }
+        }
     </script>
 }
+
 
 

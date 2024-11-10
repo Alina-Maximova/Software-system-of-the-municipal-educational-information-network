@@ -1,0 +1,65 @@
+﻿@model IEnumerable<CourseGuide.Models.Applications>
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Услуга</th>
+            <th>Описание</th>
+            <th>Статус</th>
+            <th>Действия</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Applications in Model)
+        {
+            <tr>
+                <td>@Applications.Service.ServiceName @Applications.Service.EducationalInstitution.Name </td>
+                <td>
+                    Новер телефона: @Applications.Phone
+                    <br />
+                    Имя: @Applications.Name
+                    <br />
+                    @Applications.Description
+                </td>
+                <td>@Applications.Status</td>
+
+                @if (Applications.Status == "Новый")
+                {
+                    <td>
+                        <button class="btn btn-success mb-3 "><a asp-action="ApplicationsAccept" asp-route-id="@Applications.Id" style="text-decoration: none; color: black">Принять</a></button>
+
+                        <button class="btn btn-danger mb-3 "><a asp-action="ApplicationsCancel"  asp-route-id="@Applications.Id" style="text-decoration: none; color: black">Отменить</a></button>
+
+                    </td>
+                }
+
+            </tr>
+        }
+    </tbody>
+</table>
+@* 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // function update1(id) {
+    //     console.log(id);
+    //     $.ajax({
+    //         url: '@Url.Action("ServiceUpdate", "Admin")/' + id,
+    //         type: 'GET',
+    //         success: function (data) {
+    //             $(`#upSer-${id}`).html(data);
+    //         },
+    //         error: function (xhr, status, error) {
+    //             console.error("Error retrieving data: " + error);
+    //             alert('Ошибка при получении данных. Пожалуйста, попробуйте позже.');
+    //         }
+    //     });
+
+    // }
+
+
+
+</script>
+ *@
+

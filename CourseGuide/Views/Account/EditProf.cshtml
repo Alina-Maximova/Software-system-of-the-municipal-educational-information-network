@@ -1,0 +1,104 @@
+﻿@model CourseGuide.Models.EditProfileViewModel
+
+@{
+    ViewData["Title"] = "Профиль";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form id="EditProfFOrm" asp-controller="Account" asp-action="EditProf1" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div>
+    <div id="result4" class="alert alert-success" role="alert" style="display: none;">
+                           <!-- Здесь будет ваше сообщение успеха -->
+     </div>
+     <div id="resulterr4" class="alert alert-danger" role="alert" style="display: none;">
+                            <!-- Здесь будет ваше сообщение об ошибке -->
+    </div>
+        
+
+
+
+        <label class="form-label" asp-for="Surname"></label>
+        <input class="form-control" name='Surname' asp-for="Surname" />
+
+        <label class="form-label" asp-for="Name"></label>
+        <input class="form-control" name='Name' asp-for="Name" />
+
+        <label class="form-label" asp-for="Patronymic"></label>
+        <input class="form-control" name='Patronymic' asp-for="Patronymic" />
+
+        <label class="form-label" asp-for="UserName"></label>
+        <input class="form-control" name='UserName' asp-for="UserName" />
+
+
+        <label class="form-label" asp-for="Email"></label>
+        <input class="form-control" name="Email" asp-for="Email" />
+
+        <br />
+        <button type="submit" class="btn btn-primary mb-3" asp-action="EditProf1">Изменить данные</button>
+    </div>
+
+
+</form>
+<script>
+    $(document).ready(function () {
+        $('#EditProfFOrm').on('submit', function (event) {
+
+            event.preventDefault();
+
+            const formData = $(this).serialize();
+            console.log(formData)
+
+            $.ajax({
+                url: '@Url.Action("EditProf1", "Account")',
+                type: 'POST',
+                data: formData,
+                success: function (data) {
+                    showSuccessMessage(data);
+                    console.log(data.message);
+                    // Assuming data contains the success message you want to display
+                    showSuccessMessage(data.message);
+                    setTimeout(function () {
+                        location.reload();
+                    }, 5000);
+                },
+                error: function (xhr, status, error) {
+                    if (xhr.status === 400) {
+                        // Получаем ошибки валидации
+                        const errors = xhr.responseJSON.errors;
+                        console.log(xhr.responseJSON.errors);
+                        // Отображаем ошибки
+                        showErrorMessage(xhr.responseJSON.errors);
+                    } else { 
+                    showErrorMessage("Что-то пошло нитак :(");
+                    }
+
+
+
+
+                }
+            });
+        });
+    });
+    function showSuccessMessage(message) {
+        const errorDiv = document.getElementById('resulterr4');
+        errorDiv.innerText = message;
+        errorDiv.style.display = 'none';
+        const resultDiv = document.getElementById('result4');
+        resultDiv.innerText = message;
+        resultDiv.style.display = 'block';
+    }
+
+    function showErrorMessage(message) {
+        const resultDiv = document.getElementById('result4');
+        resultDiv.innerText = message;
+        resultDiv.style.display = 'none';
+
+        const errorDiv = document.getElementById('resulterr4');
+        errorDiv.innerText = message;
+        errorDiv.style.display = 'block';
+    }
+       
+
+</script>

@@ -1,11 +1,10 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace CourseGuide.Models
 {
-    public class RegisterViewModel
+    public class EditProfileViewModel
     {
-
         [RegularExpression(@"^[А-Яа-яЁё]+(-[А-Яа-яЁё]+)?(\s[А-Яа-яЁё]+)*$", ErrorMessage = "Фамилия должена содержать как строчные, так и заглавные буквы кирилицы.")]
         [Required(ErrorMessage = "Поле Фамилия обязательно для заполнения")]
         [DisplayName("Фамилия")]
@@ -27,16 +26,6 @@ namespace CourseGuide.Models
         [EmailAddress(ErrorMessage = "Введен некорректный адрес")]
         [DisplayName("E-mail")]
         public string Email { get; set; }
-
-        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z]).{9,}$", ErrorMessage = "Пароль должен содержать как строчные, так и заглавные буквы латиницы и иметь длину не менее 9 символов.")]
-        [Required(ErrorMessage = "Поле Пароль обязательно для заполнения")]
-        [DisplayName("Пароль")]
-        public string Password { get; set; }
-        [Required(ErrorMessage = "Поле Пароль ещё раз обязательно для заполнения")]
-        [Compare("Password", ErrorMessage = "Пароли не совпадают")]
-        [DisplayName("Пароль ещё раз")]
-        public string ConfirmPassword { get; set; }
-
 
     }
 }

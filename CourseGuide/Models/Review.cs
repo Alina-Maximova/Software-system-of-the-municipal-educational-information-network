@@ -22,13 +22,13 @@ namespace CourseGuide.Models
         [Range(1, 5, ErrorMessage = "Рейтинг должен быть от 1 до 5.")]
         public int Rating { get; set; }
         public DateTime Data { get; set; } = DateTime.Now;
-
-        // Связь с услугой
+      
+        [DisplayName("Услуга")]
         public int ServiceId { get; set; }
-        public Service Service { get; set; }
+        public Service? Service { get; set; }
 
         public string UserId { get; set; }
-        public virtual ApplicationUser User { get; set; }
+        public ApplicationUser? User { get; set; }
         public string Status { get; set; }
 
         // Опционально: можно добавить список для заполнения выпадающего списка

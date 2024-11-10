@@ -1,0 +1,32 @@
+﻿@if (ViewData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @ViewData["SuccessMessage"]
+    </div>
+}
+@if (User.Identity.IsAuthenticated)
+{
+    <div id="revCreate">
+        @* Здесь будет загружено частичное представление *@
+    </div>
+    <div id="appCreate">
+        @* Здесь будет загружено частичное представление *@
+    </div>
+}
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            $.get('@Url.Action("CreateReview", "EducationalInstitution")', function (data) {
+                $('#revCreate').html(data);
+            });
+
+            $.get('@Url.Action("CreateApplication", "EducationalInstitution")', function (data) {
+                $('#appCreate').html(data);
+            });
+
+
+        });
+
+    </script>
+}

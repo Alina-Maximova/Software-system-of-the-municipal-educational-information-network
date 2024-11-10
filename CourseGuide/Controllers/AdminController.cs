@@ -34,7 +34,7 @@ namespace CourseGuide.Controllers
         {
             var users = _userManager.Users.ToList();
             var userWithRoles = new List<UserReg>();
-            var userWithRoles1 = new List<UserReg>();
+
 
 
             foreach (var user in users)
@@ -223,7 +223,7 @@ namespace CourseGuide.Controllers
 
 
         [HttpPost]
- 
+
         public async Task<IActionResult> ServiceCreate([FromForm] Service service)
         {
             if (ModelState.IsValid)
@@ -243,14 +243,18 @@ namespace CourseGuide.Controllers
         [HttpGet]
         public IActionResult ServiceAll()
         {
-            var services = _context.Services.Include(i => i.EducationalInstitution).ToList();
+            var services = _context.Services
+                .Include(i => i.EducationalInstitution)
+                .Include(i => i.Reviews)
+                .Include(i => i.Applications)
+                .ToList();
             return PartialView("ServiceAll", services);
         }
         [HttpGet]
         public async Task<IActionResult> ServiceDelete(int id)
         {
             var services = await _context.Services
-                .Include(i => i.EducationalInstitution) 
+                .Include(i => i.EducationalInstitution)
                 .FirstOrDefaultAsync(i => i.Id == id);
 
 
@@ -271,7 +275,7 @@ namespace CourseGuide.Controllers
         public IActionResult ServiceUpdate(int id)
         {
             Console.WriteLine($"Service {id}");
-            var service =  _context.Services
+            var service = _context.Services
                 .Include(i => i.EducationalInstitution)
                 .FirstOrDefault(i => i.Id == id);
             if (service == null)
@@ -286,7 +290,7 @@ namespace CourseGuide.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ServiceUpdatePost([FromForm] Service service)
+        public IActionResult ServiceUpdatePost([FromForm] Service service)
         {
             if (ModelState.IsValid)
             {
@@ -302,6 +306,69 @@ namespace CourseGuide.Controllers
 
             // If model state is invalid, you may want to return the model back to the form
             return BadRequest("Invalid model state");
+
+
+        }
+        //Работа с отзывами
+        [HttpGet]
+        public IActionResult ReviewAll()
+        {
+            var reviews = _context.Reviews
+                .Include(r => r.Service) 
+                .ThenInclude(s => s.EducationalInstitution) 
+                .Include(r => r.User) 
+                .ToList();
+
+            Console.WriteLine(reviews.Count);
+            return PartialView("ReviewAll", reviews);
+        }
+        [HttpGet]
+        public async Task<IActionResult> ReviewDelete(int id)
+        {
+            var reviews = await _context.Reviews
+                .Include(r => r.Service)
+                .ThenInclude(s => s.EducationalInstitution)
+                .Include(r => r.User)
+                .FirstOrDefaultAsync(i => i.Id == id);
+
+
+            if (reviews != null)
+            {
+                _context.Reviews.Remove(reviews);
+                _context.SaveChanges();
+                ViewData["SuccessMessage"] = "Вы удалили отзыв";
+
+
+                return View("Admin");
+            }
+
+            return View("Admin");
+
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ReviewAccept(int id)
+        {
+            var reviews = await _context.Reviews
+                .Include(r => r.Service)
+                .ThenInclude(s => s.EducationalInstitution)
+                .Include(r => r.User)
+                .FirstOrDefaultAsync(i => i.Id == id);
+
+
+            if (reviews != null)
+            {
+                reviews.Status = "Принят";
+                _context.Reviews.Update(reviews);
+                _context.SaveChanges();
+                ViewData["SuccessMessage"] = "Вы приняли отзыв";
+
+
+                return View("Admin");
+            }
+
+            return View("Admin");
+
         }
 
     }

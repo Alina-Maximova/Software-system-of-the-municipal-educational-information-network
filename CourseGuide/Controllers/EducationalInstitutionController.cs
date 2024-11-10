@@ -1,6 +1,9 @@
 ﻿using CourseGuide.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CourseGuide.Controllers
 {
@@ -17,8 +20,8 @@ namespace CourseGuide.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            var institutions = _context.EducationalInstitutions.Include(i => i.Services).ToList();
-            return View(institutions);
+
+            return View();
         }
 
         // Метод для отображения конкретного учебного заведения
@@ -34,43 +37,82 @@ namespace CourseGuide.Controllers
             return View(institution);
         }
 
-        // Метод для добавления нового учебного заведения
+        // Работа с отзывами
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult> CreateReview()
         {
-            return View();
+            var services = await _context.Services.Include(i => i.EducationalInstitution).ToListAsync();
+            //ViewBag.Services = new SelectList(services, "Id", "Name", "EducationalInstitution.Name");
+            ViewData["Services"] = services;
+
+            return PartialView("CreateReview");
         }
+
 
         [HttpPost]
-        public IActionResult Create(EducationalInstitution institution)
+        public async Task<IActionResult> CreateReview([FromForm] Review review)
         {
-            if (ModelState.IsValid)
+            Console.WriteLine(review.UserId);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == review.UserId);
+            review.UserId = user.Id;
+            Console.WriteLine(review.UserId);
+
+            if (!ModelState.IsValid)
             {
-                _context.EducationalInstitutions.Add(institution);
-                _context.SaveChanges();
-                return RedirectToAction(nameof(Index));
+                Console.WriteLine(ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage));
+                var errors = ModelState.Values.SelectMany(v => v.Errors)
+                     .Select(e => e.ErrorMessage)
+                     .ToList();
+
+                return BadRequest(new { success = false, errors });
             }
-            return View(institution);
+            _context.Reviews.Add(review);
+            await _context.SaveChangesAsync();
+
+            // Instead of returning a view, just return a message
+            return Json(new { success = true, message = "Заявка успешно добавлена" });
+
         }
 
-        // Метод для добавления услуги к учебному заведению
+
+        // Работа с отзывами
         [HttpGet]
-        public IActionResult AddService(int institutionId)
+        public async Task<IActionResult> CreateApplication()
         {
-            var service = new Service { EducationalInstitutionId = institutionId };
-            return View(service);
+            var services = await _context.Services.Include(i => i.EducationalInstitution).ToListAsync();
+            //ViewBag.Services = new SelectList(services, "Id", "Name", "EducationalInstitution.Name");
+            ViewData["Services"] = services;
+
+            return PartialView("CreateApplication");
         }
+
 
         [HttpPost]
-        public IActionResult AddService(Service service)
+        public async Task<IActionResult> CreateApplication([FromForm] Applications application)
         {
-            if (ModelState.IsValid)
+            Console.WriteLine(application.UserId);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == application.UserId);
+            application.UserId = user.Id;
+            Console.WriteLine(application.UserId);
+
+            if (!ModelState.IsValid)
             {
-                _context.Services.Add(service);
-                _context.SaveChanges();
-                return RedirectToAction(nameof(Details), new { id = service.EducationalInstitutionId });
+                Console.WriteLine(ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage));
+                var errors = ModelState.Values.SelectMany(v => v.Errors)
+                .Select(e => e.ErrorMessage)
+                .ToList();
+
+                return BadRequest(new { success = false, errors });
             }
-            return View(service);
+            _context.Applications.Add(application);
+            await _context.SaveChangesAsync();
+
+            // Instead of returning a view, just return a message
+            return Json(new { success = true, message = "Заявка успешно добавлена" });
         }
+
+
+
+
     }
 }

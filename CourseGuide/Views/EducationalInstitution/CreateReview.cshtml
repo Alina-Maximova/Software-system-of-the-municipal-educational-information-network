@@ -1,0 +1,121 @@
+﻿@model CourseGuide.Models.Review
+
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ReviewСreateModal">
+    Добавить отзыв
+</button>
+@if (ViewData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @ViewData["SuccessMessage"]
+    </div>
+}
+
+<div class="modal fade" id="ReviewСreateModal" tabindex="-1" aria-labelledby="ReviewСreateModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ReviewСreateModalLabel">Добавить отзыв</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+
+                <form id="ReviewForm" asp-controller="EducationalInstitution" asp-action="CreateReview" method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div> 
+                    <input type="hidden" asp-for="@Model.UserId" value="@User.Identity.Name" name="UserId" />
+                    <input type="hidden" asp-for="@Model.Status" value="Новый" name="Status" />
+
+                    <div>
+                        <div id="result2" class="alert alert-success" role="alert" style="display: none;">
+                            <!-- Здесь будет ваше сообщение успеха -->
+                        </div>
+                        <div id="resulterr2" class="alert alert-danger" role="alert" style="display: none;">
+                            <!-- Здесь будет ваше сообщение об ошибке -->
+                        </div>
+
+                        <label class="form-label" asp-for="Title"></label>
+                        <input class="form-control" name='Title' asp-for="Title" />
+
+                        <label class="form-label" asp-for="Content"></label>
+                        <input class="form-control" name='Content' asp-for="Content" />
+
+                        <label class="form-label" asp-for="Rating"></label>
+                        <input type="number" class="form-control" name='Rating' asp-for="Rating" />
+
+                        @* <div class="form-group">
+                        <label asp-for="ServiceId"></label>
+                        <select asp-for="ServiceId" class="form-control" asp-items="ViewBag.EducationalInstitutions"></select>
+                        <span asp-validation-for="ServiceId" class="text-danger"></span>
+                        </div> *@
+                        @if (ViewBag.Services != null)
+                        {
+                            <label asp-for="ServiceId"></label>
+                            <select asp-for="ServiceId" class="form-control">
+                                @foreach (var service in ViewBag.Services)
+                                {
+                                    <option value="@service.Id">@service.ServiceName (@service.EducationalInstitution.Name) @service.Id</option>
+                                    <span asp-validation-for="ServiceId" class="text-danger"></span>
+                                }
+                            </select>
+                        }
+                        <br />
+                        <button type="submit" class="btn btn-primary mb-3" asp-controller="EducationalInstitution" asp-action="CreateReview">Отправить</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+
+    $(document).ready(function () {
+        $('#ReviewForm').on('submit', function (event) {
+
+            event.preventDefault();  // Prevent the default form submission
+
+            const formData = $(this).serialize(); // Serialize form data
+
+            $.ajax({
+                url: '@Url.Action("CreateReview", "EducationalInstitution")',
+                type: 'POST',
+                data: formData,
+                success: function (data) {
+                    // Assuming data contains the success message you want to display
+                    showSuccessMessage(data.message);
+                
+                    setTimeout(function () {
+                        location.reload();
+                    }, 5000);
+                },
+                error: function (xhr, status, error) {
+                    // Handle errors if necessary
+                    showErrorMessage("Проверите коректность введенных данных");
+
+                }
+            });
+        });
+    });
+    function showSuccessMessage(message) {
+        const errorDiv = document.getElementById('resulterr2');
+        errorDiv.innerText = message;
+        errorDiv.style.display = 'none';
+        const resultDiv = document.getElementById('result2');
+        resultDiv.innerText = message;
+        resultDiv.style.display = 'block';
+    }
+
+    function showErrorMessage(message) {
+        const resultDiv = document.getElementById('result2');
+        resultDiv.innerText = message;
+        resultDiv.style.display = 'none';
+
+        const errorDiv = document.getElementById('resulterr2');
+        errorDiv.innerText = message;
+        errorDiv.style.display = 'block';
+    }
+
+</script>
+

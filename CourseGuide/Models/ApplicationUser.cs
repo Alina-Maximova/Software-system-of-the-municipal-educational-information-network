@@ -16,7 +16,7 @@ namespace CourseGuide.Models
         {
             get; set;
         }
-        public virtual ICollection<Application> Applications { get; set; } = new List<Application>();
+        public virtual ICollection<Applications> Applications { get; set; } = new List<Applications>();
         public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
     }
 
