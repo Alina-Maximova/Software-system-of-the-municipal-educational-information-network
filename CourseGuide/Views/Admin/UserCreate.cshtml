@@ -1,0 +1,97 @@
+﻿@model CourseGuide.Models.UserReg
+
+<button id="openModalButton" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#createUserModal">
+    Добавить пользователя
+</button>
+<div asp-validation-summary="All" class="text-danger"></div>
+
+
+
+<div class="modal fade" id="createUserModal" tabindex="-1" aria-labelledby="createUserModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createUserModalLabel">Добавить пользователя</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="ModalForm" asp-controller="Admin" asp-action="UserCreate" method="post">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div>
+                            <label class="form-label" asp-for="Surname"></label>
+                            <input class="form-control" name='Surname' asp-for="Surname" />
+
+                            <label class="form-label" asp-for="Name"></label>
+                            <input class="form-control" name='Name' asp-for="Name" />
+
+                            <label class="form-label" asp-for="Patronymic"></label>
+                            <input class="form-control" name='Patronymic' asp-for="Patronymic" />
+
+
+                            <label class="form-label" asp-for="UserName"></label>
+                            <input class="form-control" name='UserName' asp-for="UserName" />
+
+
+                            <label class="form-label" asp-for="Email"></label>
+                            <input class="form-control" name="Email" asp-for="Email" />
+
+
+                            <label class="form-label" asp-for="Password"></label>
+                            <input class="form-control" name="Password" asp-for="Password" type="password" />
+
+
+                            <label class="form-label" asp-for="ConfirmPassword"></label>
+                            <input class="form-control" name="ConfirmPassword" asp-for="ConfirmPassword" type="password" />
+                            <div class="form-group">
+                                <label asp-for="UserRole" class="control-label"></label>
+                                <select asp-for="UserRole" class="form-control" asp-items="@(new SelectList(Model.UserRoles))"></select>
+                                <span asp-validation-for="UserRole" class="text-danger"></span>
+                            </div>
+
+                            <br />
+                            <button type="submit" class="btn btn-primary mb-3">Отправить</button>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        function openModal() {
+            $('#createUserModal').modal('show');
+        }
+
+        // Проверка на открытое модальное окно при загрузке страницы
+        if (localStorage.getItem('modalOpenUser') === 'true') {
+            openModal();
+            localStorage.removeItem('modalOpenUser'); // Удаляем флаг после открытия
+        }
+
+        // Загрузка обработчика для открытия модального окна
+        var openModalButton = document.getElementById('openModalButton');
+        if (openModalButton) {
+            openModalButton.addEventListener('click', function () {
+                localStorage.setItem('modalOpenUser', 'true'); // Сохраняем состояние
+            });
+        }
+
+        // Если нужно закрывать модальное окно и убирать состояние из Local Storage
+        $('.modal').on('hidden.bs.modal', function () {
+            localStorage.removeItem('modalOpenUser');
+        });
+    });
+
+    if (@ViewData["SuccessMessage"] != null) {
+       localStorage.setItem("modalOpenUser", "false");
+     };
+
+</script>
+

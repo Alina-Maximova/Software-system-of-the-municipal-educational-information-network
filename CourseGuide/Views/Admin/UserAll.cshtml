@@ -1,0 +1,38 @@
+﻿@model IEnumerable<CourseGuide.Models.UserReg>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ФИО</th>
+            <th>Логин</th>
+            <th>Email</th>
+            <th>Роли</th>
+            <th>Удалить</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Surname @user.Name @user.Patronymic</td>
+                <td>@user.UserName</td>
+                <td>@user.Email </td>
+                <td>
+                    @if (user.UserRole != null)
+                    {
+
+                        @user.UserRole
+
+                    }
+                    else
+                    {
+                        <span>Нет ролей</span>
+                    }
+                </td>
+
+                <td>  <button class="btn btn-danger mb-3 "><a asp-action="UserDelete" asp-route-UserName="@user.UserName" style="text-decoration: none; color: black">Удалить</a></button>    </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

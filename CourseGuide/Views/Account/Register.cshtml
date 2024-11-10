@@ -9,8 +9,14 @@
 <form asp-controller="Account" asp-action="Register" method="post">
     <div asp-validation-summary="All" class="text-danger"></div>
     <div>
+        <label class="form-label" asp-for="Surname"></label>
+        <input class="form-control" name='Surname' asp-for="Surname" />
+
         <label class="form-label" asp-for="Name"></label>
         <input class="form-control" name='Name' asp-for="Name" />
+
+        <label class="form-label" asp-for="Patronymic"></label>
+        <input class="form-control" name='Patronymic' asp-for="Patronymic" />
 
         <label class="form-label" asp-for="UserName"></label>
         <input class="form-control" name='UserName' asp-for="UserName" />
@@ -34,11 +40,3 @@
     
 
 </form>
-@if (ViewBag.Message != null)
-{
-
-    <script>
-        alert('@Html.Raw(ViewBag.Message)');
-    </script>
-
-}

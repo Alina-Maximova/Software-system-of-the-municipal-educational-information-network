@@ -1,0 +1,64 @@
+﻿@model IEnumerable<CourseGuide.Models.EducationalInstitution>
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Адресс</th>
+            <th>Описание</th>
+            <th>Услуги</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var EducationalInstitution in Model)
+        {
+            <tr>
+                <td>@EducationalInstitution.Name</td>
+                <td>@EducationalInstitution.Address </td>
+                <td>@EducationalInstitution.Description</td>
+                <td>
+                    <ul>
+                        @foreach (var service in @EducationalInstitution.Services)
+                        {
+                            <li>@service.ServiceName: @service.Description</li>
+                        }
+                    </ul>
+                </td>
+
+                <td>
+                    <button class="btn btn-warning mb-3">
+                        <a style="text-decoration: none; color: black" onclick="update(@EducationalInstitution.Id)">Изменить</a>
+                    </button>
+                    <button class="btn btn-danger mb-3 "><a asp-action="EducationalInstitutionDelete" asp-route-id="@EducationalInstitution.Id" style="text-decoration: none; color: black">Удалить</a></button>
+                    <div id='@EducationalInstitution.Id'>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function update(id) {
+        $.ajax({
+            url: '@Url.Action("EducationalInstitutionUpdate", "Admin")/' + id,
+            type: 'GET',
+            success: function (data) {
+                $(`#${id}`).html(data);
+            },
+            error: function (xhr, status, error) {
+                console.error("Error retrieving data: " + error);
+                alert('Ошибка при получении данных. Пожалуйста, попробуйте позже.');
+            }
+        });
+
+    }
+
+
+
+</script>
+
+

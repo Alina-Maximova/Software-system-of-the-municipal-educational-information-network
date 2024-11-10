@@ -1,0 +1,128 @@
+﻿@{
+    ViewData["Title"] = "Панель администратора";
+}
+
+
+<h2>@ViewData["Title"]</h2>
+@if (ViewData["SuccessMessage"] != null)
+{
+    <div id="successAlert" class=" alert alert-success" role="alert">
+        @ViewData["SuccessMessage"]
+    </div>
+
+
+}
+
+<div class="tab-container">
+    <div class="tabs">
+        <button class="tab-link " onclick="openTab(event, 'Tab1')">Пользователи</button>
+        <button class="tab-link" onclick="openTab(event, 'Tab2')">Услуги</button>
+        <button class="tab-link " onclick="openTab(event, 'Tab3')">Учебные заведения</button>
+        <button class="tab-link" onclick="openTab(event, 'Tab4')">Отзывы</button>
+    </div>
+
+    <div id="Tab1" class="tab-content">
+
+        @await Html.PartialAsync("UserCreate", new CourseGuide.Models.UserReg())
+
+
+        <div id="userProfileContainer1">
+            @* Здесь будет загружено частичное представление *@
+        </div>
+
+
+    </div>
+
+    <div id="Tab2" class="tab-content">
+        <div id="serCreate">
+            @* Здесь будет загружено частичное представление *@
+        </div>
+        <div id="ser">
+            @* Здесь будет загружено частичное представление *@
+        </div>
+
+
+    </div>
+
+    <div id="Tab3" class="tab-content">
+
+        @await Html.PartialAsync("EducationalInstitutionCreate", new CourseGuide.Models.EducationalInstitution())
+        <div id="Inst">
+            @* Здесь будет загружено частичное представление *@
+        </div>
+    </div>
+
+    <div id="Tab4" class="tab-content">
+
+        @await Html.PartialAsync("EducationalInstitutionCreate", new CourseGuide.Models.EducationalInstitution())
+        <div id="Inst">
+            @* Здесь будет загружено частичное представление *@
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $.get('@Url.Action("UserAll", "Admin")', function (data) {
+                $('#userProfileContainer1').html(data);
+            });
+
+            $.get('@Url.Action("EducationalInstitutionAll", "Admin")', function (data) {
+                $('#Inst').html(data);
+            });
+            $.get('@Url.Action("ServiceAll", "Admin")', function (data) {
+                $('#ser').html(data);
+            });
+            $.get('@Url.Action("ServiceCreate", "Admin")', function (data) {
+                $('#serCreate').html(data);
+            });
+            var alertDiv = $('#successAlert');
+            if (alertDiv.length > 0 && alertDiv.text().trim() !== '') {
+                alertDiv.show();
+                setTimeout(function () {
+                    alertDiv.fadeOut('slow');
+                }, 3000); // Adjust the timeout value (in milliseconds)
+            }
+
+        });
+
+        function add() {
+            c = !c;
+        }
+        function openTab(evt, tabName) {
+            // Скрыть все вкладки
+            let tabContent = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+
+            // Снять активный класс со всех кнопок
+            let tabLinks = document.getElementsByClassName("tab-link");
+            for (let i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+            }
+
+            // Показать выбранную вкладку и добавить активный класс к ней
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+
+            // Сохранить выбранную вкладку в localStorage
+            localStorage.setItem("activeTab", tabName);
+        }
+
+        // При загрузке страницы восстановить состояние
+        document.addEventListener("DOMContentLoaded", function () {
+            const activeTab = localStorage.getItem("activeTab") || "Tab1"; // По умолчанию Tab1
+            document.getElementById(activeTab).style.display = "block";
+            const tabLinks = document.getElementsByClassName("tab-link");
+            for (let i = 0; i < tabLinks.length; i++) {
+                if (tabLinks[i].innerText === document.getElementById(activeTab).previousElementSibling.innerText) {
+                    tabLinks[i].className += " active";
+                }
+            }
+        });
+    </script>
+}
+
+

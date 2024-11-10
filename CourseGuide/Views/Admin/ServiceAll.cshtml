@@ -1,0 +1,61 @@
+﻿@model IEnumerable<CourseGuide.Models.Service>
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Учебное заведение</th>
+            <th>Описание</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Service in Model)
+        {
+            <tr>
+                <td>@Service.ServiceName</td>
+                <td>@Service.EducationalInstitution.Name </td>
+                <td>
+                    Цена: @Service.Price руб.
+                    <br/>
+                    @Service.Description
+
+                </td>
+
+                <td>
+                    <button class="btn btn-warning mb-3">
+                        <a style="text-decoration: none; color: black" onclick="update1(@Service.Id)">Изменить</a>
+                    </button>
+                    <button class="btn btn-danger mb-3 "><a asp-action="ServiceDelete" asp-route-id="@Service.Id" style="text-decoration: none; color: black">Удалить</a></button>
+                    <div id="upSer-@Service.Id">
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function update1(id) {
+        console.log(id);
+        $.ajax({
+            url: '@Url.Action("ServiceUpdate", "Admin")/' + id,
+            type: 'GET',
+            success: function (data) {
+                $(`#upSer-${id}`).html(data);
+            },
+            error: function (xhr, status, error) {
+                console.error("Error retrieving data: " + error);
+                alert('Ошибка при получении данных. Пожалуйста, попробуйте позже.');
+            }
+        });
+
+    }
+
+
+
+</script>
+
+

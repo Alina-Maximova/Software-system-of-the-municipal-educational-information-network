@@ -1,0 +1,84 @@
+﻿@model CourseGuide.Models.Service
+
+
+
+
+<form id="ServiceFormUpdate" asp-controller="Admin" asp-action="ServiceUpdatePost" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <input type="hidden" asp-for="@Model.Id" value="@Model.Id" name="Id" />
+    <input type="hidden" asp-for="@Model.EducationalInstitutionId" value="@Model.EducationalInstitutionId" name="EducationalInstitutionId" />
+
+    <div>
+        <div id="result3" class="alert alert-success" role="alert" style="display: none;">
+            <!-- Здесь будет ваше сообщение успеха -->
+        </div>
+
+        <div id="resulterr3" class="alert alert-danger" role="alert" style="display: none;">
+            <!-- Здесь будет ваше сообщение об ошибке -->
+        </div>
+
+
+        <label class="form-label" asp-for="ServiceName"></label>
+        <input class="form-control" name='ServiceName' asp-for="ServiceName" />
+
+
+
+        <label class="form-label" asp-for="Description"></label>
+        <input class="form-control" name='Description' asp-for="Description" />
+
+        <label class="form-label" asp-for="Price"></label>
+        <input type="number" class="form-control" name='Price' asp-for="Price" />
+        <br />
+
+
+        <button type="submit" class="btn btn-primary mb-3" asp-controller="Admin" asp-action="ServiceUpdatePost">Отправить</button>
+    </div>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#ServiceFormUpdate').on('submit', function (event) {
+            event.preventDefault();  // Prevent the default form submission
+
+            const formData = $(this).serialize(); // Serialize form data
+            console.log(formData);
+            $.ajax({
+                url: '@Url.Action("ServiceUpdatePost", "Admin")',
+                type: 'POST',
+                data: formData,
+                success: function (data) {
+                    // Assuming data contains the success message you want to display
+                    showSuccessMessage(data);
+                    setTimeout(function () {
+                        location.reload();
+                    }, 5000);
+                },
+                error: function (xhr, status, error) {
+                    // Handle errors if necessary
+                    showErrorMessage("Проверите коректность введенных данных");
+
+                }
+            });
+        });
+    });
+    function showSuccessMessage(message) {
+        const errorDiv = document.getElementById('resulterr3');
+        errorDiv.innerText = message; // Присваиваем текст сообщения
+        errorDiv.style.display = 'none'; // Делаем элемент видимым
+        const resultDiv = document.getElementById('result3');
+        resultDiv.innerText = message; // Присваиваем текст сообщения
+        resultDiv.style.display = 'block'; // Делаем элемент видимым
+    }
+
+    function showErrorMessage(message) {
+        const resultDiv = document.getElementById('result3');
+        resultDiv.innerText = message; // Присваиваем текст сообщения
+        resultDiv.style.display = 'none'; // Делаем элемент видимым
+        const errorDiv = document.getElementById('resulterr3');
+        errorDiv.innerText = message; // Присваиваем текст сообщения
+        errorDiv.style.display = 'block'; // Делаем элемент видимым
+    }
+</script> 
+

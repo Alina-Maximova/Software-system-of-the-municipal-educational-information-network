@@ -1,25 +1,26 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+
 .footerme {
     height: 60px; /* Высота футера */
     background-color: #f8f9fa; /* Нежно-серый фон */
@@ -32,6 +33,86 @@ body {
     height: 80px;
     width: 100%; /* Полная ширина окна */
 }
+
 nav {
     background-color: #f8f9fa;
+}
+
+
+.tab-container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.tabs {
+    display: flex;
+    background-color: #f1f1f1;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    color: black;
+    transition: 0.3s;
+}
+
+    .tab-link:hover {
+        background-color: #ddd;
+    }
+
+    .tab-link.active {
+        background-color: #ccc;
+        font-weight: bold;
+    }
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+    .tab-content.active {
+        display: block;
+    }
+
+/* Стили для модального окна */
+.modal {
+
+    position: fixed; /* Закрепить модальное окно */
+    z-index: 1; /* Поставить на передний план */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включить прокрутку при необходимости */
+    background-color: rgb(0, 0, 0); /* Черный фон с прозрачностью */
+    background-color: rgba(0, 0, 0, 0.4); /* Черный с прозрачностью */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина окна */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+.alert {
+    transition: opacity 0.5s ease; /* Adjust the transition duration as needed */
 }

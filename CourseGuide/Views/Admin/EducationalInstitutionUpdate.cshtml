@@ -1,0 +1,83 @@
+﻿@model CourseGuide.Models.EducationalInstitution
+
+<div id="result1" class="alert alert-success" role="alert" style="display:none">
+    <!-- Здесь будет ваше сообщение об ошибке -->
+</div>
+
+<div id="resulterr1" class="alert alert-danger" role="alert" style="display:none">
+    <!-- Здесь будет ваше сообщение об ошибке -->
+</div>
+
+
+<form id="EducationalInstitutionUpdatePostForm" asp-controller="Admin" asp-action="EducationalInstitutionUpdatePost" method="post">
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div>
+        <input type="hidden" asp-for="@Model.Id" value="@Model.Id" name="Id" />
+
+
+
+        <label class="form-label" asp-for="Name"></label>
+        <input class="form-control" name='Name' asp-for="Name" />
+
+        <label class="form-label" asp-for="Address"></label>
+        <input class="form-control" name='Address' asp-for="Address" />
+
+
+        <label class="form-label" asp-for="Description"></label>
+        <input class="form-control" name='Description' asp-for="Description" />
+        <br />
+
+
+        <button type="submit" class="btn btn-primary mb-3" asp-controller="Admin" asp-action="EducationalInstitutionUpdatePost">Отправить</button>
+    </div>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#EducationalInstitutionUpdatePostForm').on('submit', function (event) {
+            event.preventDefault();  
+
+            const formData = $(this).serialize(); 
+
+            $.ajax({
+                url: '@Url.Action("EducationalInstitutionUpdatePost", "Admin")',
+                type: 'POST',
+                data: formData,
+                success: function (data) {
+                    showSuccessMessage(data);
+
+
+                    setTimeout(function () {
+                        location.reload();
+                    }, 5000);
+                },
+                error: function (xhr, status, error) {
+                    showErrorMessage("Проверите коректность введенных данных, все поля должны быть заполнены");
+
+                }
+            });
+        });
+    });
+    function showSuccessMessage(message) {
+        const errorDiv = document.getElementById('resulterr1');
+        errorDiv.innerText = message;
+        errorDiv.style.display = 'none';
+        const resultDiv = document.getElementById('result1');
+        resultDiv.innerText = message; 
+        resultDiv.style.display = 'block'; 
+    }
+
+    function showErrorMessage(message) {
+        const resultDiv = document.getElementById('result1');
+        resultDiv.innerText = message;
+        resultDiv.style.display = 'none';
+
+        const errorDiv = document.getElementById('resulterr1');
+        errorDiv.innerText = message; 
+        errorDiv.style.display = 'block';
+    }
+</script>
+

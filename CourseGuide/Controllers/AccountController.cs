@@ -1,7 +1,6 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using CourseGuide.Models;
+﻿using CourseGuide.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CourseGuide.Controllers
 {
@@ -26,30 +25,33 @@ namespace CourseGuide.Controllers
             var userWithSameUserName = await _userManager.FindByNameAsync(model.UserName);
             var userWithSameEmail = await _userManager.FindByEmailAsync(model.Email);
 
-            if (userWithSameUserName != null && userWithSameEmail != null )
+            if (userWithSameUserName != null && userWithSameEmail != null)
             {
                 ModelState.AddModelError("UserName", "Пользователь с таким логином и почтой уже существует.");
                 return View("Register", model);
             }
-            else { 
-
-            if (userWithSameUserName != null)
+            else
             {
-                ModelState.AddModelError("UserName", "Пользователь с таким логином уже существует.");
-                return View("Register", model);
-            }
-            if (userWithSameEmail != null)
+
+                if (userWithSameUserName != null)
+                {
+                    ModelState.AddModelError("UserName", "Пользователь с таким логином уже существует.");
+                    return View("Register", model);
+                }
+                if (userWithSameEmail != null)
                 {
                     ModelState.AddModelError("Email", "Пользователь с такой почтой уже существует.");
                     return View("Register", model);
                 }
             }
 
-           
-            
+
+
             var user = new ApplicationUser
             {
+                Surname = model.Surname,
                 Name = model.Name,
+                Patronymic = model.Patronymic,
                 UserName = model.UserName,
                 Email = model.Email
             };
@@ -58,15 +60,14 @@ namespace CourseGuide.Controllers
             Console.WriteLine(result);
             if (result.Succeeded)
             {
-               Console.WriteLine( await _userManager.AddToRoleAsync(user, "User"));
+                Console.WriteLine(await _userManager.AddToRoleAsync(user, "User"));
                 await _signInManager.SignInAsync(user, false);
 
-                var user1 = await _userManager.FindByNameAsync(model.UserName!);
 
-               
 
-                    return RedirectToAction("Home");
-               
+
+                return RedirectToAction("Index", "Home");
+
             }
             return BadRequest("Что-то пошло нитак :(");
 
@@ -87,9 +88,9 @@ namespace CourseGuide.Controllers
                     await _signInManager.PasswordSignInAsync(model.UserName!, model.Password!, false, false);
                 if (result.Succeeded)
                 {
-                  
-                        return RedirectToAction("Index", "Home");
-                 
+
+                    return RedirectToAction("Index", "Home");
+
                 }
                 else
                 {

@@ -1,0 +1,71 @@
+﻿@model CourseGuide.Models.EducationalInstitution
+
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#EducationalInstitutioncreateModal">
+    Добавить учебное заведение
+</button>
+
+
+<div class="modal fade" id="EducationalInstitutioncreateModal" tabindex="-1" aria-labelledby="EducationalInstitutioncreateModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="EducationalInstitutioncreateModalLabel">Добавить пользователя</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+
+                <form id="educationalInstitutionForm" asp-controller="Admin" asp-action="EducationalInstitutionCreate" method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div>
+
+
+                        <label class="form-label" asp-for="Name"></label>
+                        <input class="form-control" name='Name' asp-for="Name" />
+
+                        <label class="form-label" asp-for="Address"></label>
+                        <input class="form-control" name='Address' asp-for="Address" />
+
+
+                        <label class="form-label" asp-for="Description"></label>
+                        <input class="form-control" name='Description' asp-for="Description" />
+                        <br />
+
+
+                        <button type="submit" class="btn btn-primary mb-3">Отправить</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modalId = "#EducationalInstitutioncreateModal"; // ID вашего модального окна
+
+        // Проверяем состояние модального окна в локальном хранилище
+        if (localStorage.getItem("modalOpenEducationalInstitution") === "true") {
+            $(modalId).modal('show');
+        }
+
+        // Сохраняем состояние при открытии модального окна
+        $(modalId).on('show.bs.modal', function () {
+            localStorage.setItem("modalOpenEducationalInstitution", "true");
+        });
+
+        // Сбрасываем состояние при закрытии модального окна
+        $(modalId).on('hide.bs.modal', function () {
+            localStorage.setItem("modalOpenEducationalInstitution", "false");
+        });
+
+    });
+    // if (@ViewData["SuccessMessage"] != null) {
+    //     localStorage.setItem("modalOpenEducationalInstitution", "false");
+    // }
+
+
+</script>
+
