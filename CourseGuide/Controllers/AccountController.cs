@@ -1,7 +1,9 @@
 ﻿using CourseGuide.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace CourseGuide.Controllers
@@ -11,8 +13,6 @@ namespace CourseGuide.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ApplicationDbContext _context;
-
-
         public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ApplicationDbContext context)
         {
             _userManager = userManager;
@@ -30,6 +30,7 @@ namespace CourseGuide.Controllers
         [HttpPost]
         public async Task<IActionResult> Register([FromForm] RegisterViewModel model)
         {
+            Console.WriteLine(model.ToString());
             var userWithSameUserName = await _userManager.FindByNameAsync(model.UserName);
             var userWithSameEmail = await _userManager.FindByEmailAsync(model.Email);
 
@@ -70,12 +71,7 @@ namespace CourseGuide.Controllers
             {
                 await _userManager.AddToRoleAsync(user, "User");
                 await _signInManager.SignInAsync(user, false);
-
-
-
-
                 return RedirectToAction("Index", "Home");
-
             }
             return BadRequest("Что-то пошло нитак :(");
 
@@ -108,6 +104,7 @@ namespace CourseGuide.Controllers
             return View(model);
         }
 
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
@@ -125,10 +122,9 @@ namespace CourseGuide.Controllers
 
         // Работа с заявками
         [HttpGet]
-        public async Task<IActionResult> ApplicationAll()
+        public async Task<IActionResult> ApplicationAllUser()
         {
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
-            Console.WriteLine(User.Identity.Name + ",lmnbvc");
 
             if (user == null)
             {
@@ -142,8 +138,9 @@ namespace CourseGuide.Controllers
                 .Where(r => r.UserId == user.Id)
                 .ToListAsync();
 
-            return PartialView("ApplicationAll", applications);
+            return PartialView("ApplicationAllUser", applications);
         }
+
         [HttpGet]
         public async Task<IActionResult> ApplicationsCancel(int id)
         {
@@ -165,33 +162,10 @@ namespace CourseGuide.Controllers
                 return View("Account");
             }
 
-            return View("Account");
+            return View("Account", "Account");
 
         }
-        [HttpGet]
-        public async Task<IActionResult> ApplicationsAccept(int id)
-        {
-            var applications = await _context.Applications
-                .Include(r => r.Service)
-                .ThenInclude(s => s.EducationalInstitution)
-                .Include(r => r.User)
-                .FirstOrDefaultAsync(i => i.Id == id);
 
-
-            if (applications != null)
-            {
-                applications.Status = "Принята";
-                _context.Applications.Update(applications);
-                _context.SaveChanges();
-                ViewData["SuccessMessage"] = "Вы приняли заявку";
-
-
-                return View("Account");
-            }
-
-            return View("Account");
-
-        }
         [HttpGet]
 
         public async Task<IActionResult> EditProf()
@@ -366,6 +340,75 @@ namespace CourseGuide.Controllers
             return BadRequest(new { success = false, errors });
         }
 
+        [HttpGet]
+        [Authorize(Roles = "Employee")]
+
+        public async Task<IActionResult> ApplicationAllEd()
+        {
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+
+            var applications = await _context.Applications
+           .Include(r => r.Service)
+               .ThenInclude(s => s.EducationalInstitution)
+           .Include(r => r.User)
+           .Where(s => s.Service.EducationalInstitutionId == user.EducationalInstitutionId)
+           .ToListAsync();
+
+            return PartialView("ApplicationAllEd", applications);
+
+
+        }
+        [HttpGet]
+        public async Task<IActionResult> ApplicationsAccept(int id)
+        {
+            var applications = await _context.Applications
+                .Include(r => r.Service)
+                .ThenInclude(s => s.EducationalInstitution)
+                .Include(r => r.User)
+                .FirstOrDefaultAsync(i => i.Id == id);
+
+
+            if (applications != null)
+            {
+                applications.Status = "Принята";
+                _context.Applications.Update(applications);
+                _context.SaveChanges();
+                ViewData["SuccessMessage"] = "Вы приняли заявку";
+
+
+                return View("Account");
+            }
+
+            return View("Account");
+
+        }
+        [HttpGet]
+        public IActionResult ReportCreate()
+        {
+            return PartialView("ReportCreate");
+        }
+        [HttpPost]
+        public async Task<IActionResult> ReportCreate([FromForm] Report report)
+        {
+           
+            Console.WriteLine(report.AcademicYear);
+            if (!ModelState.IsValid)
+            {
+                return View("Account", report);
+
+            }
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            report.EducationalInstitutionId = user.EducationalInstitutionId;
+            report.Status = "Новый";
+            _context.Reports.Add(report);
+            await _context.SaveChangesAsync();
+
+            ViewData["SuccessMessage"] = "Учебное заведение успешно создано!";
+            return View("Account");
+
+        }
     }
 
 }

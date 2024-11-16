@@ -21,7 +21,10 @@ namespace CourseGuide.Models
         [StringLength(500, ErrorMessage = "Описание услуги не может превышать 500 символов.")]
         [DisplayName("Описание")]
         public string Description { get; set; } = null;
+        
 
         public ICollection<Service> Services { get; set; } = new List<Service>(); // Связь с услугами
+        public ICollection<ApplicationUser> Users { get; set; } = new List<ApplicationUser>();
+
     }
 }

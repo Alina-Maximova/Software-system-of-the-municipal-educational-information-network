@@ -18,10 +18,11 @@ namespace CourseGuide.Models
         [DisplayName("Текст отзыва")]
         public string Content { get; set; }
 
-        [DisplayName("Рейтинг")]
+        [Required(ErrorMessage = "Рейтинг обязателен для заполнения.")]
         [Range(1, 5, ErrorMessage = "Рейтинг должен быть от 1 до 5.")]
+        [DisplayName("Рейтинг")]
         public int Rating { get; set; }
-        public DateTime Data { get; set; } = DateTime.Now;
+        public DateTime Data { get; set; } = DateTime.UtcNow;
       
         [DisplayName("Услуга")]
         public int ServiceId { get; set; }

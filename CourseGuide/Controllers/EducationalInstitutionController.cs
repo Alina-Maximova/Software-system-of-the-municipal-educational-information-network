@@ -55,7 +55,6 @@ namespace CourseGuide.Controllers
             Console.WriteLine(review.UserId);
             var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == review.UserId);
             review.UserId = user.Id;
-            Console.WriteLine(review.UserId);
 
             if (!ModelState.IsValid)
             {

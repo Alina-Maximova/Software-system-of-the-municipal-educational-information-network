@@ -20,6 +20,7 @@ namespace CourseGuide.Models
         [Range(0, double.MaxValue, ErrorMessage = "Цена должна быть неотрицательным числом.")]
         [DisplayName("Цена")]
         public decimal Price { get; set; }
+        [DisplayName("Учебное заведение")]
 
         public int EducationalInstitutionId { get; set; }
         public EducationalInstitution? EducationalInstitution { get; set; }

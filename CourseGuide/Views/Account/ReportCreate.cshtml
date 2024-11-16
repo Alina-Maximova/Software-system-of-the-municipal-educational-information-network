@@ -1,0 +1,102 @@
+﻿@model CourseGuide.Models.Report
+
+<button id="openModalButtonReport" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#RetortCreateModal">
+    Добавить отчет
+</button>
+
+
+<div class="modal fade" id="RetortCreateModal" tabindex="-1" aria-labelledby="RetortCreateModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="RetortCreateModalLabel">Создание отчета</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="RetortCreateForm" asp-controller="Account" asp-action="ReportCreate" method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div>
+
+
+                        <label class="form-label" asp-for="AcademicYear"></label>
+                        <input class="form-control" name='AcademicYear' asp-for="AcademicYear" />
+
+                        <label class="form-label" asp-for="StudentsAdmitted"></label>
+                        <input class="form-control" name='StudentsAdmitted' asp-for="StudentsAdmitted" />
+
+                        <label class="form-label" asp-for="StudentsGraduated"></label>
+                        <input class="form-control" name='StudentsGraduated' asp-for="StudentsGraduated" />
+
+
+                        <label class="form-label" asp-for="NumberOfTeachers"></label>
+                        <input class="form-control" name='NumberOfTeachers' asp-for="NumberOfTeachers" />
+
+                        <label class="form-label" asp-for="Revenue"></label>
+                        <input class="form-control" name='Revenue' asp-for="Revenue" />
+
+                        <label class="form-label" asp-for="FreeClasses"></label>
+                        <input class="form-control" name='FreeClasses' asp-for="FreeClasses" />
+
+                        <label class="form-label" asp-for="AgeGroup"></label>
+                        <input class="form-control" name='AgeGroup' asp-for="AgeGroup" />
+
+                        <label class="form-label" asp-for="PlansNextYear"></label>
+                        <textarea class="form-control" name='PlansNextYear' asp-for="PlansNextYear"></textarea>
+
+                        <label class="form-label" asp-for="Challenges"></label>
+                        <textarea class="form-control" name='Challenges' asp-for="Challenges"></textarea>
+
+
+                        <br />
+
+
+                        <button type="submit" asp-controller="Account" asp-action="ReportCreate" class="btn btn-primary mb-3">Добавить</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function openModalEd() {
+            $('#RetortCreateModal').modal('show');
+        }
+
+        // Проверка на открытое модальное окно при загрузке страницы
+        if (localStorage.getItem('modalOpenReport') === 'true') {
+            openModalEd();
+            localStorage.removeItem('modalOpenReport'); // Удаляем флаг после открытия
+        }
+
+        // Загрузка обработчика для открытия модального окна
+        var openModalButton = document.getElementById('openModalButtonReport');
+        if (openModalButton) {
+            openModalButton.addEventListener('click', function () {
+                localStorage.setItem('modalOpenReport', 'true'); // Сохраняем состояние
+            });
+        }
+
+        const modal = document.getElementById('RetortCreateModal');
+        const closeModalButton = modal.querySelector('.btn-close');
+        // Если нужно закрывать модальное окно и убирать состояние из Local Storage
+        closeModalButton.addEventListener('click', function () {
+            localStorage.removeItem('modalOpenReport');
+        });
+
+
+    });
+
+</script>
+@if (@ViewData["SuccessMessage"] != null)
+{
+    <script>
+        localStorage.removeItem('modalOpenReport');
+
+    </script>
+
+}
+

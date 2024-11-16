@@ -1,21 +1,20 @@
 ﻿@model CourseGuide.Models.UserReg
 
-<button id="openModalButton" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#createUserModal">
+<button id="openModalButtonUser" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#createUserModal">
     Добавить пользователя
 </button>
 <div asp-validation-summary="All" class="text-danger"></div>
 
 
 
-<div class="modal fade" id="createUserModal" tabindex="-1" aria-labelledby="createUserModalLabel">
+<div class="modal fade" id="createUserModal" tabindex="-1" aria-labelledby="createUserModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="createUserModalLabel">Добавить пользователя</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createUserModalLabel">Создание нового пользователя</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
 
                     <form id="ModalForm" asp-controller="Admin" asp-action="UserCreate" method="post">
                         <div asp-validation-summary="All" class="text-danger"></div>
@@ -58,40 +57,41 @@
                     </form>
                 </div>
             </div>
-        </div>
+     
 
     </div>
 </div>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        function openModal() {
+        function openModalUser() {
+            console.log("1111")
             $('#createUserModal').modal('show');
         }
 
         // Проверка на открытое модальное окно при загрузке страницы
         if (localStorage.getItem('modalOpenUser') === 'true') {
-            openModal();
+            openModalUser();
             localStorage.removeItem('modalOpenUser'); // Удаляем флаг после открытия
         }
 
         // Загрузка обработчика для открытия модального окна
-        var openModalButton = document.getElementById('openModalButton');
+        var openModalButton = document.getElementById('openModalButtonUser');
         if (openModalButton) {
             openModalButton.addEventListener('click', function () {
                 localStorage.setItem('modalOpenUser', 'true'); // Сохраняем состояние
             });
         }
-
+        const modal = document.getElementById('createUserModal');
+        const closeModalButton = modal.querySelector('.btn-close');
         // Если нужно закрывать модальное окно и убирать состояние из Local Storage
-        $('.modal').on('hidden.bs.modal', function () {
+        closeModalButton.addEventListener('click', function () {
+            console.log('lkjhgf')
             localStorage.removeItem('modalOpenUser');
         });
     });
 
-    if (@ViewData["SuccessMessage"] != null) {
-       localStorage.setItem("modalOpenUser", "false");
-     };
+ 
 
 </script>
 

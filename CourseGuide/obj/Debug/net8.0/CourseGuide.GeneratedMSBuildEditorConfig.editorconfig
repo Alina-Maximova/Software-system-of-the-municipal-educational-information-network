@@ -9,119 +9,139 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CourseGuide
 build_property.RootNamespace = CourseGuide
-build_property.ProjectDir = C:\Users\MAS0323\source\repos\5\lb4\CourseGuide\CourseGuide\
+build_property.ProjectDir = C:\Users\MAS0323\source\repos\CourseGuide\CourseGuide\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\MAS0323\source\repos\5\lb4\CourseGuide\CourseGuide
+build_property.MSBuildProjectDirectory = C:\Users\MAS0323\source\repos\CourseGuide\CourseGuide
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Account/Account.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/Account.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Account/ApplicationAll.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBcHBsaWNhdGlvbkFsbC5jc2h0bWw=
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/ApplicationAllEd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBcHBsaWNhdGlvbkFsbEVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Account/EditPassword.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/ApplicationAllUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBcHBsaWNhdGlvbkFsbFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/EditPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Account/EditProf.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/EditProf.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0UHJvZi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Account/Login.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Account/Register.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Admin/Admin.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/ReportCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXBvcnRDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Admin/EducationalInstitutionAll.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/EducationalInstitutionAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWR1Y2F0aW9uYWxJbnN0aXR1dGlvbkFsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Admin/EducationalInstitutionCreate.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/EducationalInstitutionCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWR1Y2F0aW9uYWxJbnN0aXR1dGlvbkNyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Admin/EducationalInstitutionUpdate.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/EducationalInstitutionUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWR1Y2F0aW9uYWxJbnN0aXR1dGlvblVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Admin/ReviewAll.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/ReportAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVwb3J0QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/ReportDetailed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVwb3J0RGV0YWlsZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/ReviewAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmV2aWV3QWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Admin/ServiceAll.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/ServiceAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VydmljZUFsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Admin/ServiceCreate.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/ServiceCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VydmljZUNyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Admin/ServiceUpdate.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/ServiceUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VydmljZVVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Admin/UserAll.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/UserAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckFsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Admin/UserCreate.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/UserCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckNyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/EducationalInstitution/CreateApplication.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/UserUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlclVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/EducationalInstitution/CreateApplication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uYWxJbnN0aXR1dGlvblxDcmVhdGVBcHBsaWNhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/EducationalInstitution/CreateReview.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/EducationalInstitution/CreateReview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uYWxJbnN0aXR1dGlvblxDcmVhdGVSZXZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/EducationalInstitution/Index.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/EducationalInstitution/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uYWxJbnN0aXR1dGlvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Home/Index.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Home/Privacy.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Shared/Error.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/_ViewImports.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/_ViewStart.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/5/lb4/CourseGuide/CourseGuide/Views/Shared/_Layout.cshtml]
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8nxrvoealu

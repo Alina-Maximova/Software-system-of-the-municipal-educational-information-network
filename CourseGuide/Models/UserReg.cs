@@ -44,7 +44,9 @@ namespace CourseGuide.Models
         public string UserRole { get; set; }
 
         // Опционально: можно добавить список для заполнения выпадающего списка
-        public List<string> UserRoles { get; } = new List<string> { "Employee", "Admin", "Worker" };
+        public List<string> UserRoles { get; } = new List<string> { "Employee", "Admin" };
+        public int? EducationalInstitutionId { get; set; }
+        public virtual EducationalInstitution? EducationalInstitution { get; set; }
     }
 
 

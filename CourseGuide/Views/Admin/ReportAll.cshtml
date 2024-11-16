@@ -1,0 +1,80 @@
+﻿@model IEnumerable<CourseGuide.Models.Report>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Учебное заведение</th>
+            <th>Учебный год</th>
+            <th>Статус</th>
+
+
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Report in Model)
+        {
+
+            <tr onclick="ReportDetailed1(@Report.Id)">
+                <td>@Report.EducationalInstitution.Name</td>
+                <td>@Report.AcademicYear уч.г. </td>
+                <td>@Report.Status </td>
+                <td>
+                   
+                    <div id="rep-@Report.Id">
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    function ReportDetailed1(id) {
+        localStorage.setItem('modalOpenRe', 'true'); // Сохраняем состояние
+
+        $.ajax({
+            url: '@Url.Action("ReportDetailed", "Admin")/' + id,
+            type: 'GET',
+            success: function (data) {
+                $(`#rep-${id}`).html(data);
+
+            },
+            error: function (xhr, status, error) {
+                console.error("Error retrieving data: " + error);
+                alert('Ошибка при получении данных. Пожалуйста, попробуйте позже.');
+            }
+        });
+
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        function openModalRe() {
+            $('#ReportModal').modal('show');
+        }
+
+        // Проверка на открытое модальное окно при загрузке страницы
+        if (localStorage.getItem('modalOpenRe') === 'true') {
+            openModalRe();
+            localStorage.removeItem('modalOpenRe'); // Удаляем флаг после открытия
+        }
+
+        // Загрузка обработчика для открытия модального окна
+        var openModalButton1 = document.getElementById('openModalButtonRe');
+        if (openModalButton1) {
+            openModalButton.addEventListener('click', function () {
+                localStorage.setItem('modalOpenRe', 'true'); // Сохраняем состояние
+            });
+        }
+
+        const modal1 = document.getElementById('ReportModal');
+        const closeModalButton1 = modal1.querySelector('.btn-close');
+        // Если нужно закрывать модальное окно и убирать состояние из Local Storage
+        closeModalButton1.addEventListener('click', function () {
+            localStorage.removeItem('modalOpenRe');
+        });
+    })
+</script>
+
+

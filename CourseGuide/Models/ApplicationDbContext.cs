@@ -10,15 +10,13 @@ namespace CourseGuide.Models
         public DbSet<Service> Services { get; set; }
         public DbSet<Applications> Applications { get; set; }
         public DbSet<Review> Reviews { get; set; }
-
-
+        public DbSet<Report> Reports { get; set; }
 
         // Конструктор с конфигурацией
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
-
         // Метод для настройки модели
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -31,8 +29,11 @@ namespace CourseGuide.Models
                 .HasMaxLength(256);
 
             modelBuilder.Entity<Service>()
-                .Property(s => s.Description)
-                .HasMaxLength(512);
+    .Property(s => s.Description)
+    .HasMaxLength(512);
+
+         
+
         }
     }
 }

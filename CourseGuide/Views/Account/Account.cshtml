@@ -1,38 +1,31 @@
 ﻿@if (ViewData["SuccessMessage"] != null)
 {
-    <div class="alert alert-success" role="alert">
+    <div id="successAlert" class="alert alert-success" role="alert">
         @ViewData["SuccessMessage"]
     </div>
 }
-@if (User.Identity.IsAuthenticated)
-{
-
-
-}
 
 @{
-    ViewData["Title"] = "Панель администратора";
+    ViewData["Title"] = "Личный кабинет";
 }
 @if (User.Identity.IsAuthenticated)
 {
     <h2>@ViewData["Title"]</h2>
-    @if (ViewData["SuccessMessage"] != null)
-    {
-        <div id="successAlert" class=" alert alert-success" role="alert">
-            @ViewData["SuccessMessage"]
-        </div>
 
-
-    }
 
     <div class="tab-container">
         <div class="tabs">
-            <button class="tab-link " onclick="openTab(event, 'Tab1')">Профиль</button>
-            <button class="tab-link" onclick="openTab(event, 'Tab2')">Другое</button>
+            <button class="tab-link " onclick="openTab(event, 'Tab1User')">Профиль</button>
+            <button class="tab-link" onclick="openTab(event, 'Tab2User')">Заявки</button>
+            @if (User.IsInRole("Employee"))
+            {
+                <button class="tab-link" onclick="openTab(event, 'Tab3User')">Отчеты</button>
+            }
+
 
         </div>
 
-        <div id="Tab1" class="tab-content">
+        <div id="Tab1User" class="tab-content">
             <button id="deleteAccountBtn" class="btn btn-danger" onclick="confirmDelete()">Удалить аккаунт</button>
             <div id="edit">
                 @* Здесь будет загружено частичное представление *@
@@ -42,27 +35,62 @@
             </div>
         </div>
 
-        <div id="Tab2" class="tab-content">
+        <div id="Tab2User" class="tab-content">
+            @if (User.IsInRole("Employee"))
+            {
+                <div id="appEd">
+                    @* Здесь будет загружено частичное представление *@
+                </div>
+            }
+            else
+            {
+                <div id="appUser">
+                    @* Здесь будет загружено частичное представление *@
+                </div>
+            }
 
-            <div id="app">
-                @* Здесь будет загружено частичное представление *@
-            </div>
+
 
         </div>
+        @if (User.IsInRole("Employee"))
+        {
+            <div id="Tab3User" class="tab-content">
+
+                @await Html.PartialAsync("ReportCreate", new CourseGuide.Models.Report())
+
+
+            </div>
+
+        }
+
 
     </div>
 
 }
+@if (User.IsInRole("Employee"))
+{
+   
+    <script>
+        $(document).ready(function () {
+            $.get('@Url.Action("ApplicationAllEd", "Account")', function (data) {
+                $('#appEd').html(data);
+            });
+        });
+        
 
-
+    </script>
+    
+}
 
 @section Scripts {
     <script>
         $(document).ready(function () {
 
-            $.get('@Url.Action("ApplicationAll", "Account")', function (data) {
-                $('#app').html(data);
+            $.get('@Url.Action("ApplicationAllUser", "Account")', function (data) {
+                $('#appUser').html(data);
             });
+
+
             $.get('@Url.Action("EditProf", "Account")', function (data) {
                 $('#edit').html(data);
             });
@@ -76,6 +104,8 @@
                 alertDiv.show();
                 setTimeout(function () {
                     alertDiv.fadeOut('slow');
+                    location.href = '/Account/Account';
+
                 }, 3000); // Adjust the timeout value (in milliseconds)
             }
 
@@ -102,12 +132,12 @@
             evt.currentTarget.className += " active";
 
             // Сохранить выбранную вкладку в localStorage
-            localStorage.setItem("activeTab", tabName);
+            localStorage.setItem("activeTabUser", tabName);
         }
 
         // При загрузке страницы восстановить состояние
         document.addEventListener("DOMContentLoaded", function () {
-            const activeTab = localStorage.getItem("activeTab") || "Tab1"; // По умолчанию Tab1
+            const activeTab = localStorage.getItem("activeTabUser") || "Tab1User"; // По умолчанию Tab1
             document.getElementById(activeTab).style.display = "block";
             const tabLinks = document.getElementsByClassName("tab-link");
             for (let i = 0; i < tabLinks.length; i++) {

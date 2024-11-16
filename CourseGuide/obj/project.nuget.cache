@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U9hVnO80lGZB9J/RDqzGIG493S67qPGoN9eKT4Ep6JMe58BWjCzBzRRhr2qNx9qtHkADdssvJMzSnn/yaQ2sSQ==",
+  "dgSpecHash": "TbVCuX2P3B1e6oJpB9TBAMOLV+JcBWRWrkAWOfP5TG4CxNtR7oIOsZ5N6g69e4uORq3kv+6R6NOI37yhbmaITg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\CourseGuide.csproj",
+  "projectFilePath": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\CourseGuide.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MAS0323\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\MAS0323\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -51,6 +51,8 @@
     "C:\\Users\\MAS0323\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\MAS0323\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\MAS0323\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\MAS0323\\.nuget\\packages\\npgsql\\8.0.5\\npgsql.8.0.5.nupkg.sha512",
+    "C:\\Users\\MAS0323\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.10\\npgsql.entityframeworkcore.postgresql.8.0.10.nupkg.sha512",
     "C:\\Users\\MAS0323\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\MAS0323\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\MAS0323\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",

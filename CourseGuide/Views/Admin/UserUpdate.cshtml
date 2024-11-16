@@ -1,0 +1,82 @@
+﻿
+@ViewBag.userName
+<form id="UserFormUpdate" asp-controller="Admin" asp-action="UserUpdatePost">
+    <div id="result5" class="alert alert-success" role="alert" style="display: none;">
+        <!-- Здесь будет ваше сообщение успеха -->
+    </div>
+
+    <div id="resulterr5" class="alert alert-danger" role="alert" style="display: none;">
+        <!-- Здесь будет ваше сообщение об ошибке -->
+    </div>
+        <input type="hidden" value="@ViewBag.userName" name="userName" />
+        <select name="Edut" id="edutSelect">
+            @foreach (var item in ViewBag.Items)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    <button class="btn" type="submit" id="UserFormUpdate" asp-controller="Admin" asp-action="UserUpdatePost">Отправить</button>
+    </form>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#UserFormUpdate').on('submit', function (event) {
+            event.preventDefault(); 
+            var formData = {
+                userName: $('[name="userName"]').val(),
+                Edut: parseInt($('#edutSelect').val())
+            };// Prevent the default form submission
+
+            console.log(formData);
+            $.ajax({
+                url: '@Url.Action("UserUpdatePost", "Admin")',
+                type: 'POST',
+                data: formData,
+                success: function (data) {
+                    // Assuming data contains the success message you want to display
+                    showSuccessMessage(data);
+                    setTimeout(function () {
+                        location.reload();
+                    }, 5000);
+                },
+                error: function (xhr, status, error) {
+                    // Handle errors if necessary
+                    console.log(xhr.responseJSON.errors);
+
+
+                    if (xhr.status === 400 && xhr.responseJSON && xhr.responseJSON.errors) {
+                        const errors = xhr.responseJSON.errors;
+
+                        showErrorMessage(xhr.responseJSON.errors);
+
+                    }
+
+                    showErrorMessage("Что-то пошло нитак :(");
+
+                }
+            });
+        });
+    });
+    function showSuccessMessage(message) {
+        const errorDiv = document.getElementById('resulterr5');
+        errorDiv.innerText = message; // Присваиваем текст сообщения
+        errorDiv.style.display = 'none'; // Делаем элемент видимым
+        const resultDiv = document.getElementById('result5');
+        resultDiv.innerText = message; // Присваиваем текст сообщения
+        resultDiv.style.display = 'block'; // Делаем элемент видимым
+    }
+
+    function showErrorMessage(message) {
+        const resultDiv = document.getElementById('result5');
+        resultDiv.innerText = message; // Присваиваем текст сообщения
+        resultDiv.style.display = 'none'; // Делаем элемент видимым
+        const errorDiv = document.getElementById('resulterr5');
+        errorDiv.innerText = message; // Присваиваем текст сообщения
+        errorDiv.style.display = 'block'; // Делаем элемент видимым
+    }
+</script>
+

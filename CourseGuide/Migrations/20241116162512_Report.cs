@@ -5,7 +5,7 @@
 namespace CourseGuide.Migrations
 {
     /// <inheritdoc />
-    public partial class add2 : Migration
+    public partial class Report : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

@@ -1,0 +1,65 @@
+﻿@model CourseGuide.Models.Report
+
+
+<button id="openModalButtonRe" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ReportModal">
+    Подробнее
+ </button>
+
+
+<div class="modal fade" id="ReportModal" tabindex="-1" aria-labelledby="ReportModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ReportModalLabel">Детали</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div>Учебный год:  @Model.AcademicYear уч.г.</div>
+                <div>Сколько посткпило:  @Model.StudentsAdmitted человек</div>
+                <div>Сколько выпустилось:  @Model.StudentsGraduated человек</div>
+                <div>Количество преподавателей:  @Model.NumberOfTeachers человек</div>
+                <div>Прибыль:  @Model.Revenue руб.</div>
+                <div>Сколько бесплатных занятий:  @Model.FreeClasses</div>
+                <div>Возросная группа:  @Model.AgeGroup</div>
+                <div>Планы на следующий год:  @Model.PlansNextYear</div>
+                <div>Трудности:  @Model.Challenges</div>
+                <div>Статус:  @Model.Status</div>
+                @if (Model.Status == "Новый")
+                {
+                    <button class="btn btn-success mb-3 "><a asp-action="ReportAccept" asp-route-id="@Model.Id" style="text-decoration: none; color: black">Принять</a></button>
+                    <button class="btn btn-success mb-3 "><a asp-action="ReportRevision" asp-route-id="@Model.Id" onclick="revision(@Model.Id)" style="text-decoration: none; color: black">На доработку</a></button>
+                }
+
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+
+    function revision(id) {
+        console.log(id);
+        const revision = prompt("Причина отказа:");
+        var formData = {
+            revision: revision
+        };
+        $.ajax({
+            url: '@Url.Action("ReportRevision", "Admin")/' + id,
+            type: 'GET',
+            data: formData,
+            success: function (data) {
+                
+            },
+            error: function (xhr, status, error) {
+                alert("Что-то пошло нитак :(");
+
+            }
+        });
+
+    }
+
+
+</script>
+

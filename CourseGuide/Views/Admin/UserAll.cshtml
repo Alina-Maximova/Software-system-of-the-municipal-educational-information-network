@@ -7,6 +7,7 @@
             <th>Логин</th>
             <th>Email</th>
             <th>Роли</th>
+            <th>Учебное заведение</th>
             <th>Удалить</th>
         </tr>
     </thead>
@@ -29,10 +30,52 @@
                         <span>Нет ролей</span>
                     }
                 </td>
+                <td>
+                    @if (user.UserRole == "Employee")
+                    {
+                        if (user.EducationalInstitution != null)
+                        {
+                            @user.EducationalInstitution.Name
 
-                <td>  <button class="btn btn-danger mb-3 "><a asp-action="UserDelete" asp-route-UserName="@user.UserName" style="text-decoration: none; color: black">Удалить</a></button>    </td>
+                        }
+                    }
+                </td>
+
+                <td>
+                    @if (user.UserRole == "Employee")
+                    {
+                        <button class="btn btn-warning mb-3">
+                            <a style="text-decoration: none; color: black" onclick="updateEd('@user.UserName')">Добавить учебное заведене</a>
+                        </button>
+                        <div id="UpdateEd"></div>
+                   
+                        
+                    }
+                    <button class="btn btn-danger mb-3 "><a asp-action="UserDelete" asp-route-UserName="@user.UserName" style="text-decoration: none; color: black">Удалить</a></button>   
+                </td>
             </tr>
+
         }
     </tbody>
 </table>
 
+<script>
+    function updateEd(userName) {
+        alert(userName);
+        $.ajax({
+            url: '@Url.Action("UserUpdate", "Admin")/',
+            type: 'GET',
+            data: { userName: userName },
+            success: function (data) {
+                $('#UpdateEd').html(data);
+
+                
+            },
+            error: function (xhr, status, error) {
+                console.error("Error retrieving data: " + error);
+                alert('Ошибка при получении данных. Пожалуйста, попробуйте позже.');
+            }
+        });
+
+    }
+</script>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\CourseGuide.csproj": {}
+    "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\CourseGuide.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\CourseGuide.csproj": {
+    "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\CourseGuide.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\CourseGuide.csproj",
+        "projectUniqueName": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\CourseGuide.csproj",
         "projectName": "CourseGuide",
-        "projectPath": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\CourseGuide.csproj",
+        "projectPath": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\CourseGuide.csproj",
         "packagesPath": "C:\\Users\\MAS0323\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MAS0323\\source\\repos\\5\\lb4\\CourseGuide\\CourseGuide\\obj\\",
+        "outputPath": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,6 +65,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.10, )"
             }

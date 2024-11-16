@@ -28,7 +28,6 @@
                 @if (Applications.Status == "Новый")
                 {
                     <td>
-                        <button class="btn btn-success mb-3 "><a asp-action="ApplicationsAccept" asp-route-id="@Applications.Id" style="text-decoration: none; color: black">Принять</a></button>
 
                         <button class="btn btn-danger mb-3 "><a asp-action="ApplicationsCancel"  asp-route-id="@Applications.Id" style="text-decoration: none; color: black">Отменить</a></button>
 
