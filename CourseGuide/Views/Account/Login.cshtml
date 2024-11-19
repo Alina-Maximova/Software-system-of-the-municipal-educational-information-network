@@ -1,27 +1,29 @@
 ﻿@model CourseGuide.Models.LoginViewModel
+<div class="container">
+    @{
+        ViewData["Title"] = "Авторизация";
+    }
 
-@{
-    ViewData["Title"] = "Авторизация";
-}
+    <h1>@ViewData["Title"]</h1>
 
-<h1>@ViewData["Title"]</h1>
-
-<form asp-controller="Account" asp-action="Login" method="post">
-    <div asp-validation-summary="All"></div>
-    <div>
-
-
-        <label class="form-label" asp-for="UserName"></label>
-        <input class="form-control" name='UserName' asp-for="UserName" />
+    <form asp-controller="Account" asp-action="Login" method="post">
+        <div asp-validation-summary="All"></div>
+        <div>
 
 
-        <label class="form-label" asp-for="Password"></label>
-        <input class="form-control" name="Password" asp-for="Password" type="password" />
+            <label class="form-label" asp-for="UserName"></label>
+            <input class="form-control" name='UserName' asp-for="UserName" />
 
-        <br />
-        <button type="submit" class="btn btn-primary mb-3" asp-action="Login">Отправить</button>
-    </div>
-</form>
+
+            <label class="form-label" asp-for="Password"></label>
+            <input class="form-control" name="Password" asp-for="Password" type="password" />
+
+            <br />
+            <button type="submit" class="btn btn-primary mb-3" asp-action="Login">Отправить</button>
+        </div>
+    </form>
+</div>
+
 @if (ViewBag.Message != null)
 {
 

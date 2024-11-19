@@ -22,6 +22,18 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/AnnualReportAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBbm51YWxSZXBvcnRBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/AnnualReportCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBbm51YWxSZXBvcnRDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/AnnualReportUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBbm51YWxSZXBvcnRVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/ApplicationAllEd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBcHBsaWNhdGlvbkFsbEVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,12 +58,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Account/ReportCreate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXBvcnRDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/AnnualReportAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQW5udWFsUmVwb3J0QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/AnnualReportDetailed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQW5udWFsUmVwb3J0RGV0YWlsZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/EducationalInstitutionAll.cshtml]
@@ -64,14 +80,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/EducationalInstitutionUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWR1Y2F0aW9uYWxJbnN0aXR1dGlvblVwZGF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/ReportAll.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVwb3J0QWxsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/ReportDetailed.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVwb3J0RGV0YWlsZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/Admin/ReviewAll.cshtml]
@@ -108,6 +116,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/EducationalInstitution/CreateReview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uYWxJbnN0aXR1dGlvblxDcmVhdGVSZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/EducationalInstitution/EducationalInstitutionAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uYWxJbnN0aXR1dGlvblxFZHVjYXRpb25hbEluc3RpdHV0aW9uQWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/EducationalInstitution/EducationalInstitutionDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uYWxJbnN0aXR1dGlvblxFZHVjYXRpb25hbEluc3RpdHV0aW9uRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MAS0323/source/repos/CourseGuide/CourseGuide/Views/EducationalInstitution/Index.cshtml]

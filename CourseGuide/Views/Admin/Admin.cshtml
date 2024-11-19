@@ -1,4 +1,5 @@
-﻿@{
+﻿<div class="container">
+@{
     ViewData["Title"] = "Панель администратора";
 }
 @if (User.IsInRole("Admin"))
@@ -67,6 +68,7 @@
     </div>
     
 }
+</div>
 
 
 
@@ -89,7 +91,7 @@
             $.get('@Url.Action("ReviewAll", "Admin")', function (data) {
                 $('#Rev').html(data);
             });
-            $.get('@Url.Action("ReportAll", "Admin")', function (data) {
+            $.get('@Url.Action("AnnualReportAll", "Admin")', function (data) {
                 $('#Rep').html(data);
             });
             var alertDiv = $('#successAlert');

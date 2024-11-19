@@ -1,6 +1,6 @@
 ﻿@model CourseGuide.Models.Applications
 
-<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ApplicationСreateModal">
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ApplicationСreateModal" style="background-color: #79769b">
     Подать заявку в учебное заведение
 </button>
 
@@ -49,7 +49,7 @@
                         <input  class="form-control" name='Description' asp-for="Description" />
 
                         <br />
-                        <button type="submit" class="btn btn-primary mb-3" asp-controller="EducationalInstitution" asp-action="CreateApplication">Отправить</button>
+                        <button type="submit" class="btn mb-3" asp-controller="EducationalInstitution" asp-action="CreateApplication" style="background-color: #79769b">Отправить</button>
                     </div>
 
 

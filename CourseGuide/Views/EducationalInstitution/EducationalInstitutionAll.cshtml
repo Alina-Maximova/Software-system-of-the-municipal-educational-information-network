@@ -1,0 +1,19 @@
+﻿@model IEnumerable<CourseGuide.Models.EducationalInstitution>
+
+<div style="margin-top: 2%;">
+    @foreach (var EducationalInstitution in Model)
+    {
+        <div class="card" style="width:100%; margin: 2%; ">
+            <div class="card-body ">
+                <h5 class="card-title">@EducationalInstitution.Name</h5>
+                <p class="card-text">@EducationalInstitution.Description</p>
+                <div style="text-align: right;">
+                    <a href="/EducationalInstitution/EducationalInstitutionDetails/@EducationalInstitution.Id">Подробнее</a>
+
+
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

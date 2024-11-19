@@ -384,14 +384,14 @@ namespace CourseGuide.Controllers
 
         }
         [HttpGet]
-        public IActionResult ReportCreate()
+        public IActionResult AnnualReportCreate()
         {
-            return PartialView("ReportCreate");
+            return PartialView("AnnualReportCreate");
         }
         [HttpPost]
-        public async Task<IActionResult> ReportCreate([FromForm] Report report)
+        public async Task<IActionResult> AnnualReportCreate([FromForm] AnnualReport report)
         {
-           
+
             Console.WriteLine(report.AcademicYear);
             if (!ModelState.IsValid)
             {
@@ -402,11 +402,65 @@ namespace CourseGuide.Controllers
 
             report.EducationalInstitutionId = user.EducationalInstitutionId;
             report.Status = "Новый";
-            _context.Reports.Add(report);
+            _context.AnnualReports.Add(report);
             await _context.SaveChangesAsync();
 
-            ViewData["SuccessMessage"] = "Учебное заведение успешно создано!";
+            ViewData["SuccessMessage"] = "Вы успешно создали годовой отчет!";
             return View("Account");
+
+        }
+        [HttpGet]
+        public async Task<IActionResult> AnnualReportAll()
+        {
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            var report = await _context.AnnualReports
+                .Include(i => i.EducationalInstitution)
+                .Where(s => s.EducationalInstitutionId == user.EducationalInstitutionId)
+                .ToListAsync(); // Ensure this is awaited
+
+            return PartialView("AnnualReportAll", report);
+        }
+
+        [HttpGet]
+        public IActionResult AnnualReportUpdate(int id)
+        {
+            Console.WriteLine(id);
+            var report = _context.AnnualReports.Find(id);
+            if (report == null)
+            {
+                return NotFound();
+            }
+            return PartialView("AnnualReportUpdate", report);
+        }
+        [HttpPost]
+        public async Task<IActionResult> AnnualReportUpdate([FromForm] AnnualReport report, int id)
+        {
+
+            Console.WriteLine(report.AcademicYear);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(new { errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage) });
+
+
+            }
+            var re = _context.AnnualReports.Find(id);
+
+            re.AcademicYear = report.AcademicYear;
+            re.StudentsAdmitted = report.StudentsAdmitted;  
+            re.StudentsGraduated = report.StudentsGraduated;
+            re.NumberOfTeachers = report.NumberOfTeachers;
+            re.Revenue=report.Revenue;
+            re.FreeClasses = report.FreeClasses;
+            re.AgeGroup = report.AgeGroup;
+            re.PlansNextYear = report.PlansNextYear;
+            re.Challenges=report.Challenges;
+            re.Status = "Новый";
+            re.Reason = null;
+            _context.AnnualReports.Update(re);
+            await _context.SaveChangesAsync();
+
+            return Content($"Вы успешо обнавили отчет");
 
         }
     }

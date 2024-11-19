@@ -1,4 +1,5 @@
-﻿@if (ViewData["SuccessMessage"] != null)
+﻿<div class="container">
+@if (ViewData["SuccessMessage"] != null)
 {
     <div id="successAlert" class="alert alert-success" role="alert">
         @ViewData["SuccessMessage"]
@@ -11,8 +12,6 @@
 @if (User.Identity.IsAuthenticated)
 {
     <h2>@ViewData["Title"]</h2>
-
-
     <div class="tab-container">
         <div class="tabs">
             <button class="tab-link " onclick="openTab(event, 'Tab1User')">Профиль</button>
@@ -26,8 +25,8 @@
         </div>
 
         <div id="Tab1User" class="tab-content">
-            <button id="deleteAccountBtn" class="btn btn-danger" onclick="confirmDelete()">Удалить аккаунт</button>
-            <div id="edit">
+            <button id="deleteAccountBtn" class="btn btn-outline-danger" onclick="confirmDelete()">Удалить аккаунт</button>
+                <div id="edit" style="border-bottom: dashed #79769b">
                 @* Здесь будет загружено частичное представление *@
             </div>
             <div id="EditPassword">
@@ -38,7 +37,7 @@
         <div id="Tab2User" class="tab-content">
             @if (User.IsInRole("Employee"))
             {
-                <div id="appEd">
+                <div id="appEd" >
                     @* Здесь будет загружено частичное представление *@
                 </div>
             }
@@ -48,38 +47,31 @@
                     @* Здесь будет загружено частичное представление *@
                 </div>
             }
-
-
-
         </div>
         @if (User.IsInRole("Employee"))
         {
             <div id="Tab3User" class="tab-content">
 
-                @await Html.PartialAsync("ReportCreate", new CourseGuide.Models.Report())
-
-
+                @await Html.PartialAsync("AnnualReportCreate", new CourseGuide.Models.AnnualReport())
+                <div id="Rep">
+                </div>
             </div>
-
         }
-
-
     </div>
-
 }
+</div>
 @if (User.IsInRole("Employee"))
 {
-   
     <script>
         $(document).ready(function () {
             $.get('@Url.Action("ApplicationAllEd", "Account")', function (data) {
                 $('#appEd').html(data);
             });
+            $.get('@Url.Action("AnnualReportAll", "Account")', function (data) {
+                $('#Rep').html(data);
+            });
         });
-        
-
     </script>
-    
 }
 
 @section Scripts {
@@ -89,12 +81,9 @@
             $.get('@Url.Action("ApplicationAllUser", "Account")', function (data) {
                 $('#appUser').html(data);
             });
-
-
             $.get('@Url.Action("EditProf", "Account")', function (data) {
                 $('#edit').html(data);
             });
-
             $.get('@Url.Action("EditPassword", "Account")', function (data) {
                 $('#EditPassword').html(data);
             });
@@ -108,7 +97,6 @@
 
                 }, 3000); // Adjust the timeout value (in milliseconds)
             }
-
         });
 
         function add() {
@@ -120,21 +108,17 @@
             for (let i = 0; i < tabContent.length; i++) {
                 tabContent[i].style.display = "none";
             }
-
             // Снять активный класс со всех кнопок
             let tabLinks = document.getElementsByClassName("tab-link");
             for (let i = 0; i < tabLinks.length; i++) {
                 tabLinks[i].className = tabLinks[i].className.replace(" active", "");
             }
-
             // Показать выбранную вкладку и добавить активный класс к ней
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
-
             // Сохранить выбранную вкладку в localStorage
             localStorage.setItem("activeTabUser", tabName);
         }
-
         // При загрузке страницы восстановить состояние
         document.addEventListener("DOMContentLoaded", function () {
             const activeTab = localStorage.getItem("activeTabUser") || "Tab1User"; // По умолчанию Tab1

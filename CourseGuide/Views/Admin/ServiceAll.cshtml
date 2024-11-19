@@ -24,10 +24,10 @@
                 </td>
 
                 <td>
-                    <button class="btn btn-warning mb-3">
+                    <button class="btn mb-3" style="background-color: #79769b">
                         <a style="text-decoration: none; color: black" onclick="update1(@Service.Id)">Изменить</a>
                     </button>
-                    <button class="btn btn-danger mb-3 "><a asp-action="ServiceDelete" asp-route-id="@Service.Id" style="text-decoration: none; color: black">Удалить</a></button>
+                    <button class="btn btn-outline-danger mb-3 "><a asp-action="ServiceDelete" asp-route-id="@Service.Id" style="text-decoration: none; color: black">Удалить</a></button>
                     <div id="upSer-@Service.Id">
                     </div>
                 </td>

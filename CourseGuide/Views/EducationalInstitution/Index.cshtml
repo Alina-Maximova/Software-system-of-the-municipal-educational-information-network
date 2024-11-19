@@ -1,19 +1,29 @@
-﻿@if (ViewData["SuccessMessage"] != null)
-{
-    <div class="alert alert-success" role="alert">
-        @ViewData["SuccessMessage"]
+﻿<div class="container">
+    @if (ViewData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @ViewData["SuccessMessage"]
+        </div>
+    }
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div style="margin-top:auto%">
+            <div id="revCreate" style="float: left; margin-right: 5%">
+                @* Здесь будет загружено частичное представление *@
+            </div>
+            <div id="appCreate" style="">
+                @* Здесь будет загружено частичное представление *@
+            </div>
+        </div>
+
+    }
+    <div id="Inst">
+        @* Здесь будет загружено частичное представление *@
     </div>
-}
+</div>
 @if (User.Identity.IsAuthenticated)
 {
-    <div id="revCreate">
-        @* Здесь будет загружено частичное представление *@
-    </div>
-    <div id="appCreate">
-        @* Здесь будет загружено частичное представление *@
-    </div>
-}
-@section Scripts {
+    @section Scripts {
     <script>
         $(document).ready(function () {
 
@@ -29,4 +39,20 @@
         });
 
     </script>
+    }
 }
+
+    <script>
+        $(document).ready(function () {
+
+
+            $.get('@Url.Action("EducationalInstitutionAll", "EducationalInstitution")', function (data) {
+                $('#Inst').html(data);
+            });
+
+
+        });
+
+    </script>
+
+

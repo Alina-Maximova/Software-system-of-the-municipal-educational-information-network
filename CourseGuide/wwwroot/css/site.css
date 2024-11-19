@@ -4,7 +4,7 @@ html {
 
 @media (min-width: 768px) {
     html {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
@@ -23,7 +23,7 @@ body {
 
 .footerme {
     height: 60px; /* Высота футера */
-    background-color: #f8f9fa; /* Нежно-серый фон */
+    background-color: #8B769B; /* Нежно-серый фон */
     text-align: center; /* Центрирование текста */
     line-height: 60px; /* Вертикальное центрирование */
     position: fixed;
@@ -32,10 +32,12 @@ body {
     width: 100%;
     height: 80px;
     width: 100%; /* Полная ширина окна */
+    color: #e2dce6;
 }
 
 nav {
-    background-color: #f8f9fa;
+    background-color: #8B769B;
+    color: #e2dce6;
 }
 
 
@@ -46,7 +48,7 @@ nav {
 
 .tabs {
     display: flex;
-    background-color: #f1f1f1;
+    background-color: #8B769B;
 }
 
 .tab-link {
@@ -59,11 +61,11 @@ nav {
 }
 
     .tab-link:hover {
-        background-color: #ddd;
+        background-color: #6B6074;
     }
 
     .tab-link.active {
-        background-color: #ccc;
+        background-color: #C1B2CD;
         font-weight: bold;
     }
 
@@ -121,8 +123,10 @@ nav {
     font-weight: bold;
     margin-bottom: 5px;
 }
-.content{
-    padding-bottom: 80px
-
+.content {
+    padding-bottom: 10%;
+}
+.container {
+    padding-top: 1%
 }
    

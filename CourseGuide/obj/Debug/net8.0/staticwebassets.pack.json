@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\home.png",
+      "PackagePath": "staticwebassets\\home.png"
+    },
+    {
       "Id": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -243,6 +247,22 @@
     {
       "Id": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\будущее.jpg",
+      "PackagePath": "staticwebassets\\будущее.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\будущее2.jpg",
+      "PackagePath": "staticwebassets\\будущее2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\будущуу3.jpg",
+      "PackagePath": "staticwebassets\\будущуу3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\линия.png",
+      "PackagePath": "staticwebassets\\линия.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CourseGuide.Microsoft.AspNetCore.StaticWebAssets.props",

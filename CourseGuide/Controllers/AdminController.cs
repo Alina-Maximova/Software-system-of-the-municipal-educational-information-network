@@ -234,7 +234,7 @@ namespace CourseGuide.Controllers
             {
                 _context.EducationalInstitutions.Remove(institution);
                 _context.SaveChanges();
-                ViewData["SuccessMessage"] = "Вы удалили " + institution.Name;
+                ViewData["SuccessMessage"] = "Вы удалили " + institution.Name+"учебное заведение";
 
 
                 return View("Admin");
@@ -323,7 +323,7 @@ namespace CourseGuide.Controllers
             {
                 _context.Services.Remove(services);
                 _context.SaveChanges();
-                ViewData["SuccessMessage"] = "Вы удалили " + services.ServiceName;
+                ViewData["SuccessMessage"] = "Вы удалили " + services.ServiceName+"услугу";
 
 
                 return View("Admin");
@@ -357,7 +357,7 @@ namespace CourseGuide.Controllers
                 _context.Services.Update(service);
                 _context.SaveChanges();
                 // Instead of returning a view, just return a message
-                return Content($"Вы успешно обновили данные об учебном заведение: {service.ServiceName}");
+                return Content($"Вы успешно обновили данные об услуге: {service.ServiceName}");
             }
             // If model state is invalid, you may want to return the model back to the form
             return BadRequest("Invalid model state");
@@ -426,26 +426,26 @@ namespace CourseGuide.Controllers
 
         //Работа с отзывами
         [HttpGet]
-        public IActionResult ReportAll()
+        public IActionResult AnnualReportAll()
         {
-            var report = _context.Reports.Include(i => i.EducationalInstitution).ToList();
-            return PartialView("ReportAll", report);
+            var report = _context.AnnualReports.Include(i => i.EducationalInstitution).ToList();
+            return PartialView("AnnualReportAll", report);
         }
         [HttpGet]
-        public IActionResult ReportDetailed(int id)
+        public IActionResult AnnualReportDetailed(int id)
         {
             Console.WriteLine(id);
-            var report = _context.Reports.Find(id);
+            var report = _context.AnnualReports.Find(id);
             if (report == null)
             {
                 return NotFound();
             }
-            return PartialView("ReportDetailed", report);
+            return PartialView("AnnualReportDetailed", report);
         }
         [HttpGet]
-        public async Task<IActionResult> ReportAccept(int id)
+        public async Task<IActionResult> AnnualReportAccept(int id)
         {
-            var report = await _context.Reports
+            var report = await _context.AnnualReports
                 .Include(s => s.EducationalInstitution)
                 .FirstOrDefaultAsync(i => i.Id == id);
 
@@ -453,7 +453,7 @@ namespace CourseGuide.Controllers
             if (report != null)
             {
                 report.Status = "Принят";
-                _context.Reports.Update(report);
+                _context.AnnualReports.Update(report);
                 _context.SaveChanges();
                 ViewData["SuccessMessage"] = "Вы приняли отчет";
 
@@ -465,9 +465,9 @@ namespace CourseGuide.Controllers
 
         }
         [HttpGet]
-        public async Task<IActionResult> ReportRevision(int id, string revision)
+        public async Task<IActionResult> AnnualReportRevision(int id, string revision)
         {
-            var report = await _context.Reports
+            var report = await _context.AnnualReports
                 .Include(s => s.EducationalInstitution)
                 .FirstOrDefaultAsync(i => i.Id == id);
 
@@ -476,7 +476,7 @@ namespace CourseGuide.Controllers
             {
                 report.Status = "На доработку";
                 report.Reason = revision;
-                _context.Reports.Update(report);
+                _context.AnnualReports.Update(report);
                 _context.SaveChanges();
                 ViewData["SuccessMessage"] = "Вы отправили отчет на доработку";
 

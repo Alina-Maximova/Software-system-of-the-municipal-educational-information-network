@@ -24,8 +24,8 @@
                 @if(Review.Status == "Новый")
                 {
                     <td>
-                        <button class="btn btn-success mb-3 "><a asp-action="ReviewAccept" asp-route-id="@Review.Id" style="text-decoration: none; color: black">Принять</a></button>
-                        <button class="btn btn-danger mb-3 "><a asp-action="ReviewDelete" asp-route-id="@Review.Id" style="text-decoration: none; color: black">Удалить</a></button>
+                        <button class="btn btn-outline-success mb-3 "><a asp-action="ReviewAccept" asp-route-id="@Review.Id" style="text-decoration: none; color: black">Принять</a></button>
+                        <button class="btn btn-outline-danger mb-3 "><a asp-action="ReviewDelete" asp-route-id="@Review.Id" style="text-decoration: none; color: black">Удалить</a></button>
 
                     </td>
                 }

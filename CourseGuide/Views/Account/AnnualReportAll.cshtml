@@ -1,0 +1,67 @@
+﻿@model IEnumerable<CourseGuide.Models.AnnualReport>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Учебное заведение</th>
+            <th>Учебный год</th>
+            <th>Статус</th>
+
+
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Report in Model)
+        {
+
+            <tr onclick="ReportDetailed1(@Report.Id)">
+                <td>@Report.EducationalInstitution.Name</td>
+                <td>@Report.AcademicYear уч.г. </td>
+                <td>@Report.Status
+                    <br />
+                    @if (@Report.Reason != null )
+                    {
+                       <div>
+                            Ошибки: @Report.Reason
+                            
+                       </div>
+                    }
+                </td>
+                <td>
+                    @if (@Report.Status == "На доработку")
+                    {
+                        <button class="btn mb-3" style="background-color: #79769b">
+                            <a style="text-decoration: none; color: black"   onclick="update(@Report.Id)">Изменить</a>
+                        </button>
+                      
+                        <div id="rep-@Report.Id">
+                        </div>
+                    }
+                   
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    function update(id) {
+        $.ajax({
+            url: '@Url.Action("AnnualReportUpdate", "Account")/' + id,
+            type: 'GET',
+            success: function (data) {
+                $(`#rep-${id}`).html(data);
+            },
+            error: function (xhr, status, error) {
+                console.error("Error retrieving data: " + error);
+                alert('Ошибка при получении данных. Пожалуйста, попробуйте позже.');
+            }
+        });
+
+    }
+</script>
+
+

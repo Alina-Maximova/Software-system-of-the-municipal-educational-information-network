@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<CourseGuide.Models.UserReg>
 
-<table class="table">
+<table class="table" style=" font-size:16px">
     <thead>
         <tr>
             <th>ФИО</th>
@@ -8,7 +8,7 @@
             <th>Email</th>
             <th>Роли</th>
             <th>Учебное заведение</th>
-            <th>Удалить</th>
+            <th>Действия</th>
         </tr>
     </thead>
     <tbody>
@@ -44,14 +44,14 @@
                 <td>
                     @if (user.UserRole == "Employee")
                     {
-                        <button class="btn btn-warning mb-3">
+                        <button class="btn mb-3" style="background-color: #79769b; font-size:16px">
                             <a style="text-decoration: none; color: black" onclick="updateEd('@user.UserName')">Добавить учебное заведене</a>
                         </button>
                         <div id="UpdateEd"></div>
                    
                         
                     }
-                    <button class="btn btn-danger mb-3 "><a asp-action="UserDelete" asp-route-UserName="@user.UserName" style="text-decoration: none; color: black">Удалить</a></button>   
+                    <button class="btn btn-outline-danger mb-3 "><a asp-action="UserDelete" asp-route-UserName="@user.UserName" style="text-decoration: none; color: black; font-size:16px">Удалить</a></button>
                 </td>
             </tr>
 
@@ -61,15 +61,12 @@
 
 <script>
     function updateEd(userName) {
-        alert(userName);
         $.ajax({
             url: '@Url.Action("UserUpdate", "Admin")/',
             type: 'GET',
             data: { userName: userName },
             success: function (data) {
                 $('#UpdateEd').html(data);
-
-                
             },
             error: function (xhr, status, error) {
                 console.error("Error retrieving data: " + error);

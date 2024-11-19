@@ -1,7 +1,7 @@
 ﻿@model CourseGuide.Models.Service
 
-<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ServiceСreateModal">
-    Добавить Услугу
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ServiceСreateModal" style="background-color: #79769b">
+    Добавить услугу
 </button>
 @if (ViewData["SuccessMessage"] != null)
 {
@@ -14,7 +14,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="ServiceСreateModalLabel">Добавить пользователя</h5>
+                <h5 class="modal-title" id="ServiceСreateModalLabel">Создание новой услуги</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -55,7 +55,7 @@
                         <br />
 
 
-                        <button type="submit" class="btn btn-primary mb-3" asp-controller="Admin" asp-action="ServiceCreate">Отправить</button>
+                        <button type="submit" class="btn mb-3" asp-controller="Admin" asp-action="ServiceCreate" style="background-color: #79769b">Добавить</button>
                     </div>
 
 

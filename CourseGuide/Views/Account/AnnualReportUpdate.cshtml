@@ -1,0 +1,104 @@
+﻿@model CourseGuide.Models.AnnualReport
+<div id="result1" class="alert alert-success" role="alert" style="display:none">
+    <!-- Здесь будет ваше сообщение об ошибке -->
+</div>
+
+<div id="resulterr1" class="alert alert-danger" role="alert" style="display:none">
+    <!-- Здесь будет ваше сообщение об ошибке -->
+</div>
+<form id="AnnualReportUpdateForm" asp-controller="Account" asp-action="AnnualReportUpdate" method="post">
+
+    <div>
+        <div>Причина: @Model.Reason</div>
+
+        <label class="form-label" asp-for="AcademicYear"></label>
+        <input class="form-control" name='AcademicYear' asp-for="AcademicYear" />
+
+        <label class="form-label" asp-for="StudentsAdmitted"></label>
+        <input class="form-control" name='StudentsAdmitted' asp-for="StudentsAdmitted" />
+
+        <label class="form-label" asp-for="StudentsGraduated"></label>
+        <input class="form-control" name='StudentsGraduated' asp-for="StudentsGraduated" />
+
+
+        <label class="form-label" asp-for="NumberOfTeachers"></label>
+        <input class="form-control" name='NumberOfTeachers' asp-for="NumberOfTeachers" />
+
+        <label class="form-label" asp-for="Revenue"></label>
+        <input class="form-control" name='Revenue' asp-for="Revenue" />
+
+        <label class="form-label" asp-for="FreeClasses"></label>
+        <input class="form-control" name='FreeClasses' asp-for="FreeClasses" />
+
+        <label class="form-label" asp-for="AgeGroup"></label>
+        <input class="form-control" name='AgeGroup' asp-for="AgeGroup" />
+
+        <label class="form-label" asp-for="PlansNextYear"></label>
+        <textarea class="form-control" name='PlansNextYear' asp-for="PlansNextYear"></textarea>
+
+        <label class="form-label" asp-for="Challenges"></label>
+        <textarea class="form-control" name='Challenges' asp-for="Challenges"></textarea>
+
+
+        <br />
+
+
+        <button type="submit" asp-controller="Account" asp-action="AnnualReportUpdate" class="btn mb-3" style="background-color: #79769b">Изменить</button>
+    </div>
+
+
+</form>
+<script>
+    $(document).ready(function () {
+        $('#AnnualReportUpdateForm').on('submit', function (event) {
+            event.preventDefault();
+
+            const formData = $(this).serialize();
+
+            $.ajax({
+                url: '@Url.Action("AnnualReportUpdate", "Account")',
+                type: 'POST',
+                data: formData,
+                success: function (data) {
+                    showSuccessMessage(data);
+
+
+                    setTimeout(function () {
+                        location.reload();
+                    }, 5000);
+                },
+                error: function (xhr, status, error) {
+                    if (xhr.status === 400 && xhr.responseJSON && xhr.responseJSON.errors) {
+                        const errors = xhr.responseJSON.errors;
+
+                        showErrorMessage(xhr.responseJSON.errors);
+
+                    } else {
+                        showErrorMessage("Что-то пошло нитак :(");
+
+                    }
+                }
+            });
+        });
+    });
+    function showSuccessMessage(message) {
+        const errorDiv = document.getElementById('resulterr1');
+        errorDiv.innerText = message;
+        errorDiv.style.display = 'none';
+        const resultDiv = document.getElementById('result1');
+        resultDiv.innerText = message;
+        resultDiv.style.display = 'block';
+    }
+
+    function showErrorMessage(message) {
+        const resultDiv = document.getElementById('result1');
+        resultDiv.innerText = message;
+        resultDiv.style.display = 'none';
+
+        const errorDiv = document.getElementById('resulterr1');
+        errorDiv.innerText = message;
+        errorDiv.style.display = 'block';
+    }
+</script>
+
+

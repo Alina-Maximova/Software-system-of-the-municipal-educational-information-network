@@ -1,0 +1,70 @@
+﻿@model CourseGuide.Models.EducationalInstitution
+
+<div class="container">
+
+    <div style="margin-top: 2%;">
+
+        <div class="card" style="width:100%; margin: 2%; ">
+            <div class="card-body ">
+                <h3 class="card-title">Название: @Model.Name</h3>
+                <p class="card-text">Описание: @Model.Description</p>
+                <p class="card-text">Адрес: @Model.Address</p>
+                <h6>УСЛУГИ</h6>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    @foreach (var Service in @Model.Services)
+                    {
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading-@Service.Id">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-@Service.Id" aria-expanded="false" aria-controls="flush-collapse-@Service.Id">
+
+                                    Название: @Service.ServiceName
+                                    <br />
+                                    Описание:@Service.Description
+                                    <br />
+                                    Цена: @Service.Price руб.
+
+
+                                </button>
+                            </h2>
+                            <div id="flush-collapse-@Service.Id" class="accordion-collapse collapse" aria-labelledby="flush-heading-@Service.Id" data-bs-parent="#accordionFlushExample">
+
+                                @foreach (var Review in @Service.Reviews)
+                                {
+                                    @if (Review.Status == "Принят")
+                                    {
+                                        <div class="card" style="width: 30%; float:left; margin:1%">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> Автор: @Review.User.UserName</h5>
+
+                                                <h5 class="card-title">@Review.Title</h5>
+                                                <h6 class="card-text">@Review.Content</h6>
+
+                                                <div class="review-rating">
+                                                    @for (var i = 0; i < Review.Rating; i++)
+                                                    {
+                                                        <span>★</span> <!-- Use span for better semantic and styling control -->
+                                                    }
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    }
+                                }
+
+                            </div>
+
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+

@@ -9,15 +9,15 @@
 <ul class="navbar-nav">
     @if (User.Identity.IsAuthenticated)
     {
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item dropdown" style="color:#e2dce6">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#e2dce6">
                 Hello, @User.Identity.Name!
                 
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#8B769B">
                 <li>
                     <form asp-action="Logout" method="post" id="logoutForm" asp-controller="Account">
-                        <button type="submit" class="btn btn-link text-decoration-none">Выйти</button>
+                        <button type="submit" class="btn btn-link text-decoration-none" style="color:#e2dce6">Выйти</button>
                     </form>
                 </li>
             </ul>
@@ -25,9 +25,9 @@
     }
     else
     {
-        <div >
-            <a class=" btn btn-dark text-light" role="button" data-bs-toggle="button" onclick="location.href='@Url.Action("Register", "Account")'">Регистрация</a>
-            <a class="btn btn-dark text-light" role="button" data-bs-toggle="button" onclick="location.href='@Url.Action("Login", "Account")'">Авторизация</a>
+        <div style="color:#e2dce6">
+            <a class="btn" style="background-color:#160c1f; color:#e2dce6" role="button" data-bs-toggle="button" onclick="location.href='@Url.Action("Register", "Account")'">Регистрация</a>
+            <a class="btn" style="background-color:#160c1f; color:#e2dce6" role="button" data-bs-toggle="button" onclick="location.href='@Url.Action("Login", "Account")'">Авторизация</a>
 
         </div>
 

@@ -27,10 +27,10 @@
                 </td>
 
                 <td>
-                    <button class="btn btn-warning mb-3">
+                    <button class="btn mb-3" style="background-color: #79769b">
                         <a style="text-decoration: none; color: black" onclick="update(@EducationalInstitution.Id)">Изменить</a>
                     </button>
-                    <button class="btn btn-danger mb-3 "><a asp-action="EducationalInstitutionDelete" asp-route-id="@EducationalInstitution.Id" style="text-decoration: none; color: black">Удалить</a></button>
+                    <button class="btn btn-outline-danger mb-3 "><a asp-action="EducationalInstitutionDelete" asp-route-id="@EducationalInstitution.Id" style="text-decoration: none; color: black">Удалить</a></button>
                     <div id='@EducationalInstitution.Id'>
                     </div>
                 </td>

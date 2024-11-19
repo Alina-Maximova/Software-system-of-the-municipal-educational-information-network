@@ -22,6 +22,61 @@ namespace CourseGuide.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("CourseGuide.Models.AnnualReport", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AcademicYear")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("AgeGroup")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Challenges")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int?>("EducationalInstitutionId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("FreeClasses")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("NumberOfTeachers")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("PlansNextYear")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Reason")
+                        .HasColumnType("text");
+
+                    b.Property<int>("Revenue")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("text");
+
+                    b.Property<int>("StudentsAdmitted")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("StudentsGraduated")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EducationalInstitutionId");
+
+                    b.ToTable("AnnualReports");
+                });
+
             modelBuilder.Entity("CourseGuide.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
@@ -167,62 +222,6 @@ namespace CourseGuide.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("EducationalInstitutions");
-                });
-
-            modelBuilder.Entity("CourseGuide.Models.Report", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("AcademicYear")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("AgeGroup")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Challenges")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int?>("EducationalInstitutionId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("FreeClasses")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("NumberOfTeachers")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("PlansNextYear")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Reason")
-                        .HasColumnType("text");
-
-                    b.Property<int>("Revenue")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("StudentsAdmitted")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("StudentsGraduated")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EducationalInstitutionId");
-
-                    b.ToTable("Reports");
                 });
 
             modelBuilder.Entity("CourseGuide.Models.Review", b =>
@@ -431,6 +430,15 @@ namespace CourseGuide.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("CourseGuide.Models.AnnualReport", b =>
+                {
+                    b.HasOne("CourseGuide.Models.EducationalInstitution", "EducationalInstitution")
+                        .WithMany()
+                        .HasForeignKey("EducationalInstitutionId");
+
+                    b.Navigation("EducationalInstitution");
+                });
+
             modelBuilder.Entity("CourseGuide.Models.ApplicationUser", b =>
                 {
                     b.HasOne("CourseGuide.Models.EducationalInstitution", "EducationalInstitution")
@@ -457,15 +465,6 @@ namespace CourseGuide.Migrations
                     b.Navigation("Service");
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("CourseGuide.Models.Report", b =>
-                {
-                    b.HasOne("CourseGuide.Models.EducationalInstitution", "EducationalInstitution")
-                        .WithMany()
-                        .HasForeignKey("EducationalInstitutionId");
-
-                    b.Navigation("EducationalInstitution");
                 });
 
             modelBuilder.Entity("CourseGuide.Models.Review", b =>
