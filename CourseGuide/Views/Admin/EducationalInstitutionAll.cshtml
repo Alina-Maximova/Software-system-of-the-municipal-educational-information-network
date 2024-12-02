@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<CourseGuide.Models.EducationalInstitution>
 
-<table class="table">
+<table class="table" style=" font-size:16px">
     <thead>
         <tr>
             <th>Название</th>
@@ -21,7 +21,7 @@
                     <ul>
                         @foreach (var service in @EducationalInstitution.Services)
                         {
-                            <li>@service.ServiceName: @service.Description</li>
+                            <li>@service.ServiceName</li>
                         }
                     </ul>
                 </td>

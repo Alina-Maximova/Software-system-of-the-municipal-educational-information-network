@@ -25,6 +25,8 @@ namespace CourseGuide.Models
 
         public ICollection<Service> Services { get; set; } = new List<Service>(); // Связь с услугами
         public ICollection<ApplicationUser> Users { get; set; } = new List<ApplicationUser>();
+        public ICollection<AnnualReport> AnnualReports { get; set; } = new List<AnnualReport>();
+
 
     }
 }

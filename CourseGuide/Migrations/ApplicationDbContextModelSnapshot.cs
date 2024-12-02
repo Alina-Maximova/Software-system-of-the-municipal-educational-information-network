@@ -433,7 +433,7 @@ namespace CourseGuide.Migrations
             modelBuilder.Entity("CourseGuide.Models.AnnualReport", b =>
                 {
                     b.HasOne("CourseGuide.Models.EducationalInstitution", "EducationalInstitution")
-                        .WithMany()
+                        .WithMany("AnnualReports")
                         .HasForeignKey("EducationalInstitutionId");
 
                     b.Navigation("EducationalInstitution");
@@ -557,6 +557,8 @@ namespace CourseGuide.Migrations
 
             modelBuilder.Entity("CourseGuide.Models.EducationalInstitution", b =>
                 {
+                    b.Navigation("AnnualReports");
+
                     b.Navigation("Services");
 
                     b.Navigation("Users");

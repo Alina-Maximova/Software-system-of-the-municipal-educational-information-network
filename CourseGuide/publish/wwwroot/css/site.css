@@ -1,0 +1,132 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.footerme {
+    height: 60px; /* Высота футера */
+    background-color: #8B769B; /* Нежно-серый фон */
+    text-align: center; /* Центрирование текста */
+    line-height: 60px; /* Вертикальное центрирование */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    width: 100%; /* Полная ширина окна */
+    color: #e2dce6;
+}
+
+nav {
+    background-color: #8B769B;
+    color: #e2dce6;
+}
+
+
+.tab-container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.tabs {
+    display: flex;
+    background-color: #8B769B;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    color: black;
+    transition: 0.3s;
+}
+
+    .tab-link:hover {
+        background-color: #6B6074;
+    }
+
+    .tab-link.active {
+        background-color: #C1B2CD;
+        font-weight: bold;
+    }
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+    .tab-content.active {
+        display: block;
+    }
+
+/* Стили для модального окна */
+.modal {
+
+    position: fixed; /* Закрепить модальное окно */
+    z-index: 1; /* Поставить на передний план */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включить прокрутку при необходимости */
+    background-color: rgb(0, 0, 0); /* Черный фон с прозрачностью */
+    background-color: rgba(0, 0, 0, 0.4); /* Черный с прозрачностью */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина окна */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+.alert {
+    transition: opacity 0.5s ease; /* Adjust the transition duration as needed */
+}
+.validation-error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.content {
+    padding-bottom: 10%;
+}
+.container {
+    padding-top: 1%
+}
+   

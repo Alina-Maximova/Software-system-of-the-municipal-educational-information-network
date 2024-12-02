@@ -11,6 +11,7 @@ namespace CourseGuide.Models
         public int? EducationalInstitutionId { get; set; }        // ID учебного заведения
 
         public EducationalInstitution? EducationalInstitution { get; set; }
+
         [Required(ErrorMessage = "Учебный год обязателен для заполнения.")]
         [RegularExpression(@"^\d{4}-\d{4}", ErrorMessage = "Некорректный год. Используйте формат XXXX-XXXX")]
         [DisplayName("Учебный год")]

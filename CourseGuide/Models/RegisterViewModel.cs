@@ -28,7 +28,7 @@ namespace CourseGuide.Models
         [DisplayName("E-mail")]
         public string Email { get; set; }
 
-        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z]).{9,}$", ErrorMessage = "Пароль должен содержать как строчные, так и заглавные буквы латиницы и иметь длину не менее 9 символов.")]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z]).{9,}$", ErrorMessage = "Пароль должен содержать как строчные, так и заглавные буквы латиницы, специальный символ и иметь длину не менее 9 символов.")]
         [Required(ErrorMessage = "Поле Пароль обязательно для заполнения")]
         [DisplayName("Пароль")]
         public string Password { get; set; }

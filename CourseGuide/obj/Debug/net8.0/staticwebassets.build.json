@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WMgSF8X0kxDTqXiKJ9EGIK3Ow91kGXCjfYXc0+vZcys=",
+  "Hash": "LBZRm+BVRzrEnv7tlGsa+9mQrZqGvMnoGwrJvwi4bK0=",
   "Source": "CourseGuide",
   "BasePath": "_content/CourseGuide",
   "Mode": "Default",
@@ -72,25 +72,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\favicon.ico",
-      "SourceId": "CourseGuide",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\",
-      "BasePath": "_content/CourseGuide",
-      "RelativePath": "favicon.ico",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
       "Identity": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\home.png",
@@ -1269,25 +1250,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\будущуу3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\линия.png",
-      "SourceId": "CourseGuide",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\",
-      "BasePath": "_content/CourseGuide",
-      "RelativePath": "линия.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\линия.png"
     }
   ]
 }

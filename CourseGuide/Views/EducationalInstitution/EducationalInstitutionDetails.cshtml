@@ -22,8 +22,6 @@
                                     Описание:@Service.Description
                                     <br />
                                     Цена: @Service.Price руб.
-
-
                                 </button>
                             </h2>
                             <div id="flush-collapse-@Service.Id" class="accordion-collapse collapse" aria-labelledby="flush-heading-@Service.Id" data-bs-parent="#accordionFlushExample">
@@ -32,12 +30,12 @@
                                 {
                                     @if (Review.Status == "Принят")
                                     {
-                                        <div class="card" style="width: 30%; float:left; margin:1%">
+                                        <div class="card" style="width: 30%; float:left; margin:1%; font-size: 16px">
                                             <div class="card-body">
                                                 <h5 class="card-title"> Автор: @Review.User.UserName</h5>
 
                                                 <h5 class="card-title">@Review.Title</h5>
-                                                <h6 class="card-text">@Review.Content</h6>
+                                                <p class="card-text">@Review.Content</p>
 
                                                 <div class="review-rating">
                                                     @for (var i = 0; i < Review.Rating; i++)

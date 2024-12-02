@@ -33,7 +33,7 @@
                 @if (Model.Status == "Новый")
                 {
                     <button class="btn btn-outline-success mb-3 "><a asp-action="AnnualReportAccept" asp-route-id="@Model.Id" style="text-decoration: none; color: black">Принять</a></button>
-                    <button class="btn btn-outline-danger mb-3 "><a asp-action="AnnualReportRevision" asp-route-id="@Model.Id" onclick="revision(@Model.Id)" style="text-decoration: none; color: black">На доработку</a></button>
+                    <button class="btn btn-outline-danger mb-3 "><a onclick="revision(@Model.Id)" style="text-decoration: none; color: black">На доработку</a></button>
                 }
 
                 
@@ -47,21 +47,27 @@
     function revision(id) {
         console.log(id);
         const revision = prompt("Причина отказа:");
-        var formData = {
-            revision: revision
-        };
-        $.ajax({
-            url: '@Url.Action("AnnualReportRevision", "Admin")/' + id,
-            type: 'GET',
-            data: formData,
-            success: function (data) {
-                
-            },
-            error: function (xhr, status, error) {
-                alert("Что-то пошло нитак :(");
+        console.log(revision)
+        if (revision != null) { 
+            var formData = {
+                revision: revision
+            };
+            $.ajax({
+                url: '@Url.Action("AnnualReportRevision", "Admin")/' + id,
+                type: 'GET',
+                data: formData,
+                success: function (data) {
+                    location.href = '/Admin/Admin';
 
-            }
-        });
+                },
+                error: function (xhr, status, error) {
+                    alert("Что-то пошло нитак :(");
+
+                }
+            });
+        }
+
+        
 
     }
 

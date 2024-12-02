@@ -47,7 +47,9 @@
                         <button class="btn mb-3" style="background-color: #79769b; font-size:16px">
                             <a style="text-decoration: none; color: black" onclick="updateEd('@user.UserName')">Добавить учебное заведене</a>
                         </button>
-                        <div id="UpdateEd"></div>
+                        <div id="UpdateEd-@user.UserName">
+
+                       </div>
                    
                         
                     }
@@ -66,7 +68,7 @@
             type: 'GET',
             data: { userName: userName },
             success: function (data) {
-                $('#UpdateEd').html(data);
+                $(`#UpdateEd-${userName}`).html(data);
             },
             error: function (xhr, status, error) {
                 console.error("Error retrieving data: " + error);

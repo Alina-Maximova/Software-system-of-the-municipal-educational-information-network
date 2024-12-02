@@ -20,6 +20,7 @@ namespace CourseGuide.Controllers
         public IActionResult EducationalInstitutionAll()
         {
             var institutions = _context.EducationalInstitutions.Include(i => i.Services).ToList();
+
             return PartialView("EducationalInstitutionAll", institutions);
         }
         [HttpGet]

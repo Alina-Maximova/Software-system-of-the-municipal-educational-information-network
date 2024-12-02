@@ -137,6 +137,7 @@ namespace CourseGuide.Controllers
                 .Include(r => r.User)
                 .Where(r => r.UserId == user.Id)
                 .ToListAsync();
+            applications.Reverse();
 
             return PartialView("ApplicationAllUser", applications);
         }
@@ -355,6 +356,7 @@ namespace CourseGuide.Controllers
            .Where(s => s.Service.EducationalInstitutionId == user.EducationalInstitutionId)
            .ToListAsync();
 
+            applications.Reverse();
             return PartialView("ApplicationAllEd", applications);
 
 
@@ -418,7 +420,7 @@ namespace CourseGuide.Controllers
                 .Include(i => i.EducationalInstitution)
                 .Where(s => s.EducationalInstitutionId == user.EducationalInstitutionId)
                 .ToListAsync(); // Ensure this is awaited
-
+            report.Reverse();
             return PartialView("AnnualReportAll", report);
         }
 

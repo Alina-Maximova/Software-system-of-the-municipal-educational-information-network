@@ -167,6 +167,9 @@ namespace CourseGuide.Controllers
         public IActionResult EducationalInstitutionAll()
         {
             var institutions = _context.EducationalInstitutions.Include(i => i.Services).ToList();
+
+            institutions.Reverse();
+
             return PartialView("EducationalInstitutionAll", institutions);
         }
         public IActionResult EducationalInstitutionCreate()
@@ -203,12 +206,12 @@ namespace CourseGuide.Controllers
             return BadRequest("Invalid model state");
         }
         [HttpPost]
-        public async Task<IActionResult> EducationalInstitutionCreate( EducationalInstitution institution)
+        public async Task<IActionResult> EducationalInstitutionCreate(EducationalInstitution institution)
         {
             Console.WriteLine("1");
             if (ModelState.IsValid)
             {
-               
+
                 Console.WriteLine(institution.Name);
                 _context.EducationalInstitutions.Add(institution);
                 _context.SaveChanges();
@@ -225,16 +228,24 @@ namespace CourseGuide.Controllers
         public async Task<IActionResult> EducationalInstitutionDelete(int id)
         {
             var institution = await _context.EducationalInstitutions
-                .Include(i => i.Services) 
-                .Include(u=> u.Users)// Загружаем связанные услуги
+                .Include(i => i.Services)
+                .Include(u => u.Users)
+                .Include(a => a.AnnualReports)
+                // Загружаем связанные услуги
                 .FirstOrDefaultAsync(i => i.Id == id);
+
+            var report = await _context.AnnualReports.FirstOrDefaultAsync(i => i.EducationalInstitutionId == institution.Id);
 
 
             if (institution != null)
             {
+                if (report != null)
+                {
+                    _context.AnnualReports.Remove(report);
+                }
                 _context.EducationalInstitutions.Remove(institution);
                 _context.SaveChanges();
-                ViewData["SuccessMessage"] = "Вы удалили " + institution.Name+"учебное заведение";
+                ViewData["SuccessMessage"] = "Вы удалили " + institution.Name + " учебное заведение";
 
 
                 return View("Admin");
@@ -254,7 +265,7 @@ namespace CourseGuide.Controllers
             return PartialView("EducationalInstitutionUpdate", institution);
         }
 
-        
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -309,6 +320,9 @@ namespace CourseGuide.Controllers
                 .Include(i => i.Reviews)
                 .Include(i => i.Applications)
                 .ToList();
+
+            services.Reverse();
+
             return PartialView("ServiceAll", services);
         }
         [HttpGet]
@@ -323,7 +337,7 @@ namespace CourseGuide.Controllers
             {
                 _context.Services.Remove(services);
                 _context.SaveChanges();
-                ViewData["SuccessMessage"] = "Вы удалили " + services.ServiceName+"услугу";
+                ViewData["SuccessMessage"] = "Вы удалили " + services.ServiceName + "услугу";
 
 
                 return View("Admin");
@@ -372,7 +386,10 @@ namespace CourseGuide.Controllers
                 .Include(r => r.Service)
                 .ThenInclude(s => s.EducationalInstitution)
                 .Include(r => r.User)
+                .OrderByDescending(r => r.Id) // Замените CreatedDate на нужное поле
                 .ToList();
+
+
             return PartialView("ReviewAll", reviews);
         }
         [HttpGet]
@@ -429,6 +446,8 @@ namespace CourseGuide.Controllers
         public IActionResult AnnualReportAll()
         {
             var report = _context.AnnualReports.Include(i => i.EducationalInstitution).ToList();
+
+
             return PartialView("AnnualReportAll", report);
         }
         [HttpGet]
@@ -486,6 +505,6 @@ namespace CourseGuide.Controllers
 
             return View("Admin");
 
-        }
+   }
     }
 }

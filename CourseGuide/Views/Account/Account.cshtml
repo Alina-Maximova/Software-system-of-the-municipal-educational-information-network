@@ -1,64 +1,67 @@
 ﻿<div class="container">
-@if (ViewData["SuccessMessage"] != null)
-{
-    <div id="successAlert" class="alert alert-success" role="alert">
-        @ViewData["SuccessMessage"]
-    </div>
-}
-
-@{
-    ViewData["Title"] = "Личный кабинет";
-}
-@if (User.Identity.IsAuthenticated)
-{
-    <h2>@ViewData["Title"]</h2>
-    <div class="tab-container">
-        <div class="tabs">
-            <button class="tab-link " onclick="openTab(event, 'Tab1User')">Профиль</button>
-            <button class="tab-link" onclick="openTab(event, 'Tab2User')">Заявки</button>
-            @if (User.IsInRole("Employee"))
-            {
-                <button class="tab-link" onclick="openTab(event, 'Tab3User')">Отчеты</button>
-            }
-
-
+    @if (ViewData["SuccessMessage"] != null)
+    {
+        <div id="successAlert" class="alert alert-success" role="alert">
+            @ViewData["SuccessMessage"]
         </div>
+    }
 
-        <div id="Tab1User" class="tab-content">
-            <button id="deleteAccountBtn" class="btn btn-outline-danger" onclick="confirmDelete()">Удалить аккаунт</button>
+    @{
+        ViewData["Title"] = "Личный кабинет";
+    }
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h2>@ViewData["Title"]</h2>
+        <div class="tab-container">
+            <div class="tabs">
+                <button class="tab-link " onclick="openTab(event, 'Tab1User')">Профиль</button>
+                <button class="tab-link" onclick="openTab(event, 'Tab2User')">Заявки</button>
+                @if (User.IsInRole("Employee"))
+                {
+                    <button class="tab-link" onclick="openTab(event, 'Tab3User')">Отчеты</button>
+                }
+
+
+            </div>
+
+            <div id="Tab1User" class="tab-content">
+                @if (User.IsInRole("User"))
+                {
+                    <button id="deleteAccountBtn" class="btn btn-outline-danger" onclick="confirmDelete()">Удалить аккаунт</button>
+                }
                 <div id="edit" style="border-bottom: dashed #79769b">
-                @* Здесь будет загружено частичное представление *@
+                    @* Здесь будет загружено частичное представление *@
+                </div>
+                <div id="EditPassword">
+                    @* Здесь будет загружено частичное представление *@
+                </div>
             </div>
-            <div id="EditPassword">
-                @* Здесь будет загружено частичное представление *@
-            </div>
-        </div>
 
-        <div id="Tab2User" class="tab-content">
+            <div id="Tab2User" class="tab-content">
+                @if (User.IsInRole("Employee"))
+                {
+                    <div id="appEd">
+                        @* Здесь будет загружено частичное представление *@
+                    </div>
+                }
+                else
+                {
+                    <div id="appUser">
+                        @* Здесь будет загружено частичное представление *@
+                    </div>
+                }
+            </div>
             @if (User.IsInRole("Employee"))
             {
-                <div id="appEd" >
-                    @* Здесь будет загружено частичное представление *@
-                </div>
-            }
-            else
-            {
-                <div id="appUser">
-                    @* Здесь будет загружено частичное представление *@
+                <div id="Tab3User" class="tab-content">
+
+                    @await Html.PartialAsync("AnnualReportCreate", new CourseGuide.Models.AnnualReport())
+                    <div id="Rep">
+                    </div>
                 </div>
             }
         </div>
-        @if (User.IsInRole("Employee"))
-        {
-            <div id="Tab3User" class="tab-content">
-
-                @await Html.PartialAsync("AnnualReportCreate", new CourseGuide.Models.AnnualReport())
-                <div id="Rep">
-                </div>
-            </div>
-        }
-    </div>
-}
+    }
 </div>
 @if (User.IsInRole("Employee"))
 {

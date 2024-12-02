@@ -296,3 +296,8 @@ C:\Users\MAS0323\source\repos\CourseGuide\CourseGuide\obj\Debug\net8.0\refint\Co
 C:\Users\MAS0323\source\repos\CourseGuide\CourseGuide\obj\Debug\net8.0\CourseGuide.pdb
 C:\Users\MAS0323\source\repos\CourseGuide\CourseGuide\obj\Debug\net8.0\CourseGuide.genruntimeconfig.cache
 C:\Users\MAS0323\source\repos\CourseGuide\CourseGuide\obj\Debug\net8.0\ref\CourseGuide.dll
+C:\Users\MAS0323\source\repos\CourseGuide\CourseGuide\bin\Debug\net8.0\publish\web.config
+C:\Users\MAS0323\source\repos\CourseGuide\CourseGuide\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\MAS0323\source\repos\CourseGuide\CourseGuide\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\MAS0323\source\repos\CourseGuide\CourseGuide\bin\Debug\net8.0\publish\CourseGuide.deps.json
+C:\Users\MAS0323\source\repos\CourseGuide\CourseGuide\bin\Debug\net8.0\publish\CourseGuide.runtimeconfig.json
