@@ -1,16 +1,16 @@
 ﻿@model CourseGuide.Models.AnnualReport
 
 
-<button id="openModalButtonRe" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ReportModal" style="background-color: #79769b">
+<button id="openModalButtonRe-@Model.Id" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ReportModal-@Model.Id" style="background-color: #79769b">
     Подробнее
  </button>
 
 
-<div class="modal fade" id="ReportModal" tabindex="-1" aria-labelledby="ReportModalLabel" aria-hidden="true">
+<div class="modal fade" id="ReportModal-@Model.Id" tabindex="-1" aria-labelledby="ReportModalLabel-@Model.Id" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="ReportModalLabel">Детали</h5>
+                <h5 class="modal-title" id="ReportModalLabel-@Model.Id">Детали</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">

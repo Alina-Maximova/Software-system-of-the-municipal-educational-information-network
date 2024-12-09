@@ -35,26 +35,5 @@
     </tbody>
 </table>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    function update1(id) {
-        console.log(id);
-        $.ajax({
-            url: '@Url.Action("ServiceUpdate", "Admin")/' + id,
-            type: 'GET',
-            success: function (data) {
-                $(`#upSer-${id}`).html(data);
-            },
-            error: function (xhr, status, error) {
-                console.error("Error retrieving data: " + error);
-                alert('Ошибка при получении данных. Пожалуйста, попробуйте позже.');
-            }
-        });
-
-    }
-
-
-
-</script>
 
 

@@ -3,136 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\controllers\\educationalinstitutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\controllers\\educationalinstitutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\annualreportdetailed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\annualreportdetailed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\annualreportall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\annualreportall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\educationalinstitution\\educationalinstitutiondetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\educationalinstitution\\educationalinstitutiondetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\educationalinstitution\\createreview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\educationalinstitution\\createreview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\serviceall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\serviceall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\reviewall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\reviewall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\educationalinstitutionall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\educationalinstitutionall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\userall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\userall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\serviceupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\serviceupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\servicecreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\servicecreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\educationalinstitutionupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\educationalinstitutionupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\educationalinstitutioncreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\educationalinstitutioncreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\userupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\userupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\educationalinstitution\\educationalinstitutionall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\educationalinstitution\\educationalinstitutionall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\account.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\account.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\annualreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\annualreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\annualreportall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\annualreportall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\educationalinstitutions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\educationalinstitutions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\applicationalled.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\applicationalled.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\educationalinstitution\\createapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\educationalinstitution\\createapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\editprof.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -143,8 +47,164 @@
       "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\editpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\applicationalluser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\applicationalluser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\applicationalled.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\applicationalled.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\annualreportupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\annualreportupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\annualreportcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\annualreportcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\annualreportall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\annualreportall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\account.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\account.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\educationalinstitution\\educationalinstitutiondetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\educationalinstitution\\educationalinstitutiondetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\educationalinstitution\\educationalinstitutionall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\educationalinstitution\\educationalinstitutionall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\educationalinstitution\\createreview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\educationalinstitution\\createreview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\educationalinstitution\\createapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\educationalinstitution\\createapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\educationalinstitution\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\educationalinstitution\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\userupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\userupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\usercreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\usercreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\serviceall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\serviceall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\reviewall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\reviewall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\educationalinstitutionupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\educationalinstitutionupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\educationalinstitutioncreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\educationalinstitutioncreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\educationalinstitutionall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\educationalinstitutionall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\controllers\\educationalinstitutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\controllers\\educationalinstitutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\userreg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\userreg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\educationalinstitutions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\educationalinstitutions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\editpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\editpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\applications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\applications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\annualreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\annualreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\serviceupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\serviceupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\servicecreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\servicecreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -153,38 +213,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\account\\annualreportupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\account\\annualreportupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\admin\\usercreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\admin\\usercreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\models\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\models\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\educationalinstitution\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\educationalinstitution\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|solutionrelative:courseguide\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB65FE77-24FC-4E22-B96A-4A4C5BB31624}|CourseGuide\\CourseGuide.csproj|c:\\users\\mas0323\\source\\repos\\courseguide\\courseguide\\migrations\\20241117093713_annualreport1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -202,7 +230,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 12,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 55,
           "Children": [
             {
               "$type": "Bookmark",
@@ -214,19 +242,103 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
+              "Title": "ApplicationAllUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\ApplicationAllUser.cshtml",
+              "RelativeDocumentMoniker": "CourseGuide\\Views\\Account\\ApplicationAllUser.cshtml",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\ApplicationAllUser.cshtml",
+              "RelativeToolTip": "CourseGuide\\Views\\Account\\ApplicationAllUser.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T16:37:41.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UserReg.cs",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\UserReg.cs",
+              "RelativeDocumentMoniker": "CourseGuide\\Models\\UserReg.cs",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\UserReg.cs",
+              "RelativeToolTip": "CourseGuide\\Models\\UserReg.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwC4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T16:32:52.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "CourseGuide\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "CourseGuide\\Models\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T16:32:35.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "CourseGuide\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "CourseGuide\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T16:32:31.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "EditPasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\EditPasswordViewModel.cs",
+              "RelativeDocumentMoniker": "CourseGuide\\Models\\EditPasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\EditPasswordViewModel.cs",
+              "RelativeToolTip": "CourseGuide\\Models\\EditPasswordViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T16:32:08.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Applications.cs",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\Applications.cs",
+              "RelativeDocumentMoniker": "CourseGuide\\Models\\Applications.cs",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\Applications.cs",
+              "RelativeToolTip": "CourseGuide\\Models\\Applications.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAwCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T09:04:30.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CourseGuide\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CourseGuide\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-02T07:38:26.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Models\\RegisterViewModel.cs",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\RegisterViewModel.cs",
               "RelativeToolTip": "CourseGuide\\Models\\RegisterViewModel.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwB4AAACmAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCUAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T15:21:27.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 54,
               "Title": "20241120063408_add3.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Migrations\\20241120063408_add3.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Migrations\\20241120063408_add3.cs",
@@ -238,67 +350,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 40,
               "Title": "EducationalInstitutions.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\EducationalInstitutions.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Models\\EducationalInstitutions.cs",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\EducationalInstitutions.cs",
               "RelativeToolTip": "CourseGuide\\Models\\EducationalInstitutions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T06:32:20.198Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Controllers\\HomeController.cs",
               "RelativeToolTip": "CourseGuide\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAYwBAAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T17:46:12.119Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 37,
               "Title": "Review.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\Review.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Models\\Review.cs",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\Review.cs",
               "RelativeToolTip": "CourseGuide\\Models\\Review.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAZAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACMAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T14:47:54.241Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\Service.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Models\\Service.cs",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\Service.cs",
               "RelativeToolTip": "CourseGuide\\Models\\Service.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAIAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T14:47:33.972Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "EducationalInstitutionDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\EducationalInstitution\\EducationalInstitutionDetails.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\EducationalInstitution\\EducationalInstitutionDetails.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\EducationalInstitution\\EducationalInstitutionDetails.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\EducationalInstitution\\EducationalInstitutionDetails.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACAAAABzAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAABzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-19T14:39:37.611Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 47,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\appsettings.json",
               "RelativeDocumentMoniker": "CourseGuide\\appsettings.json",
@@ -316,50 +428,49 @@
               "RelativeDocumentMoniker": "CourseGuide\\Models\\EditProfileViewModel.cs",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\EditProfileViewModel.cs",
               "RelativeToolTip": "CourseGuide\\Models\\EditProfileViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T08:43:00.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Account\\Register.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\Register.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAB2AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-17T17:41:10.643Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T17:40:29.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T17:40:29.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 31,
               "Title": "EducationalInstitutionController.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Controllers\\EducationalInstitutionController.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Controllers\\EducationalInstitutionController.cs",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Controllers\\EducationalInstitutionController.cs",
               "RelativeToolTip": "CourseGuide\\Controllers\\EducationalInstitutionController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAIwBUAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T17:36:20.498Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 6,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Home\\Privacy.cshtml",
@@ -371,19 +482,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 18,
               "Title": "EducationalInstitutionAll.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\EducationalInstitution\\EducationalInstitutionAll.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\EducationalInstitution\\EducationalInstitutionAll.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\EducationalInstitution\\EducationalInstitutionAll.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\EducationalInstitution\\EducationalInstitutionAll.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-17T17:28:27.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 5,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Shared\\_LoginPartial.cshtml",
@@ -395,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Home\\Index.cshtml",
@@ -407,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 52,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "CourseGuide\\wwwroot\\js\\site.js",
@@ -419,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 51,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "CourseGuide\\wwwroot\\css\\site.css",
@@ -431,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Shared\\_Layout.cshtml",
@@ -443,19 +554,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 12,
               "Title": "ApplicationAllEd.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\ApplicationAllEd.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Account\\ApplicationAllEd.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\ApplicationAllEd.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Account\\ApplicationAllEd.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAA9AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-17T09:42:11.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 53,
               "Title": "20241117093713_AnnualReport1.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Migrations\\20241117093713_AnnualReport1.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Migrations\\20241117093713_AnnualReport1.cs",
@@ -467,115 +578,115 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 43,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Models\\ApplicationUser.cs",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\ApplicationUser.cs",
               "RelativeToolTip": "CourseGuide\\Models\\ApplicationUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T09:32:41.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 13,
               "Title": "AnnualReportUpdate.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\AnnualReportUpdate.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Account\\AnnualReportUpdate.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\AnnualReportUpdate.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Account\\AnnualReportUpdate.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAC0AAACIAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC0AAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-17T09:25:50.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 15,
               "Title": "AnnualReportAll.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\AnnualReportAll.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Account\\AnnualReportAll.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\AnnualReportAll.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Account\\AnnualReportAll.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAVAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADQAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-17T09:21:09.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 45,
               "Title": "AplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\AplicationDbContext.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Models\\AplicationDbContext.cs",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\AplicationDbContext.cs",
               "RelativeToolTip": "CourseGuide\\Models\\AplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T09:19:23.611Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 16,
               "Title": "Account.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\Account.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Account\\Account.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\Account.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Account\\Account.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAA8AAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAIoAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-17T09:17:20.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\EducationalInstitution\\Index.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\EducationalInstitution\\Index.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\EducationalInstitution\\Index.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\EducationalInstitution\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAASAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADAAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T19:20:29.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "CreateReview.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\EducationalInstitution\\CreateReview.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\EducationalInstitution\\CreateReview.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\EducationalInstitution\\CreateReview.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\EducationalInstitution\\CreateReview.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADcAAAB7AAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAD0AAACLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T19:20:22.576Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 20,
               "Title": "CreateApplication.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\EducationalInstitution\\CreateApplication.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\EducationalInstitution\\CreateApplication.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\EducationalInstitution\\CreateApplication.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\EducationalInstitution\\CreateApplication.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADMAAACnAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAEUAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T19:20:19.25Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "UserUpdate.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\UserUpdate.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\UserUpdate.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\UserUpdate.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Admin\\UserUpdate.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA5AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T19:20:15.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 24,
               "Title": "UserCreate.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\UserCreate.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\UserCreate.cshtml",
@@ -587,7 +698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 2,
               "Title": "UserAll.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\UserAll.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\UserAll.cshtml",
@@ -595,11 +706,12 @@
               "RelativeToolTip": "CourseGuide\\Views\\Admin\\UserAll.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T19:20:06.188Z"
+              "WhenOpened": "2024-11-16T19:20:06.188Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 50,
               "Title": "ServiceCreate.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\ServiceCreate.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\ServiceCreate.cshtml",
@@ -611,115 +723,115 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "ServiceAll.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\ServiceAll.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\ServiceAll.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\ServiceAll.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Admin\\ServiceAll.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAsAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T19:19:54.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "EducationalInstitutionCreate.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\EducationalInstitutionCreate.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\EducationalInstitutionCreate.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\EducationalInstitutionCreate.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Admin\\EducationalInstitutionCreate.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACQAAACAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACQAAABtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T19:19:37.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 14,
               "Title": "AnnualReportCreate.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\AnnualReportCreate.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Account\\AnnualReportCreate.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\AnnualReportCreate.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Account\\AnnualReportCreate.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAB4AAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAqwDQAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T19:19:32.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 10,
               "Title": "EditPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\EditPassword.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Account\\EditPassword.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\EditPassword.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Account\\EditPassword.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABHAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T19:19:24.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 9,
               "Title": "EditProf.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\EditProf.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Account\\EditProf.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Account\\EditProf.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Account\\EditProf.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACYAAABnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T19:19:16.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 46,
               "Title": "AnnualReport.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\AnnualReport.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Models\\AnnualReport.cs",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Models\\AnnualReport.cs",
               "RelativeToolTip": "CourseGuide\\Models\\AnnualReport.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAoAAAATAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAwDkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T19:11:37.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 26,
               "Title": "ReviewAll.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\ReviewAll.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\ReviewAll.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\ReviewAll.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Admin\\ReviewAll.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T19:04:26.3Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 33,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Controllers\\AccountController.cs",
               "RelativeToolTip": "CourseGuide\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAG8BAAAAAAAAAAAAAIkBAABHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T18:47:38.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "EducationalInstitutionUpdate.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\EducationalInstitutionUpdate.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\EducationalInstitutionUpdate.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\EducationalInstitutionUpdate.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Admin\\EducationalInstitutionUpdate.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAApAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACcAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T18:42:20.891Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 49,
               "Title": "ServiceUpdate.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\ServiceUpdate.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\ServiceUpdate.cshtml",
@@ -731,63 +843,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 22,
               "Title": "Admin.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\Admin.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\Admin.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\Admin.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Admin\\Admin.cshtml",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAGUAAAATAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAADMAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T17:59:01.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 32,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "CourseGuide\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Controllers\\AdminController.cs",
               "RelativeToolTip": "CourseGuide\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAM0BAAAAAAAAAAAwwOYBAAA+AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T17:57:28.589Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 29,
               "Title": "EducationalInstitutionAll.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\EducationalInstitutionAll.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\EducationalInstitutionAll.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\EducationalInstitutionAll.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Admin\\EducationalInstitutionAll.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T17:53:39.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "AnnualReportDetailed.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\AnnualReportDetailed.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\AnnualReportDetailed.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\AnnualReportDetailed.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Admin\\AnnualReportDetailed.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAADsAAAAzAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAwAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T17:53:17.398Z"
+              "WhenOpened": "2024-11-16T17:53:17.398Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "AnnualReportAll.cshtml",
               "DocumentMoniker": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\AnnualReportAll.cshtml",
               "RelativeDocumentMoniker": "CourseGuide\\Views\\Admin\\AnnualReportAll.cshtml",
               "ToolTip": "C:\\Users\\MAS0323\\source\\repos\\CourseGuide\\CourseGuide\\Views\\Admin\\AnnualReportAll.cshtml",
               "RelativeToolTip": "CourseGuide\\Views\\Admin\\AnnualReportAll.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T17:51:26.971Z"
+              "WhenOpened": "2024-11-16T17:51:26.971Z",
+              "EditorCaption": ""
             }
           ]
         },

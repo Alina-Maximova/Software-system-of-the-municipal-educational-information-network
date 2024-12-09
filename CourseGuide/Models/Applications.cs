@@ -18,7 +18,7 @@ namespace CourseGuide.Models
         public Service? Service { get; set; }
 
         [Required(ErrorMessage = "Укажите номер теелфона")]
-        [DisplayName("Новер телефона")]
+        [DisplayName("Номер телефона")]
         [RegularExpression(@"^(?:\+7[0-9]{10}|8[0-9]{10})$", ErrorMessage = "Некорректный номер телефона. Используйте формат +7XXXXXXXXXX или 8XXXXXXXXXX.")]
         public string Phone { get; set; }
 
